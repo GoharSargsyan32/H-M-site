@@ -2,6 +2,86 @@ import cls from "./header.module.scss";
 import Image from "next/image";
 import Link from "next/link";
 
+const headerMenu = [
+  {
+    name: "Women",
+    link: "/",
+    innerLinks: [
+      {
+        name: "New Arrivals",
+        items: [
+          {
+            name: "View All",
+            link: "/"
+          },
+          {
+            name: "Clothes",
+            link: "/"
+          },
+          {
+            name: "Shoes & Accessories",
+            link: "/"
+          }
+        ]
+      },
+      {
+        name: "The essentials",
+        items: [
+          {
+            name: "The Collection",
+            link: "/"
+          },
+          {
+            name: "About",
+            link: "/"
+          },
+        ]
+      },
+    ]
+  },
+  {
+    name: "Men",
+    link: "/",
+  },
+  {
+    name: "Divided",
+    link: "/"
+  },
+  {
+    name: "Baby",
+    link: "/"
+  },
+  {
+    name: "Kids",
+    link: "/"
+  },
+  {
+    name: "H&M HOME",
+    link: "/"
+  },
+  {
+    name: "Beauty",
+    link: "/"
+  },
+  {
+    name: "Sport",
+    link: "/"
+  },
+  {
+    name: "Sale",
+    link: "/"
+  },
+  {
+    name: "Sustainability",
+    link: "/"
+  },
+]
+
+
+
+
+
+
 const Header = () => {
   return (
     <div className={cls.header}>
@@ -81,16 +161,41 @@ const Header = () => {
       </div>
       <div className={cls.bottom}>
         <div className={cls.menu}>
-          <Link href={""}>Women</Link>
-          <Link href={""}>Men</Link>
-          <Link href={""}>Divided</Link>
-          <Link href={""}>Baby</Link>
-          <Link href={""}>Kids</Link>
-          <Link href={""}>H&M HOME</Link>
-          <Link href={""}>Beauty</Link>
-          <Link href={""}>Sport</Link>
-          <Link href={""}>Sale</Link>
-          <Link href={""}>Sustainability</Link>
+          {
+            headerMenu.map(({
+                link,
+                name,
+                innerLinks
+            }) => {
+              return (
+                  <div className={cls.headerLink}>
+                    <Link href={link}>{name}</Link>
+                    <div className={cls.innerMenu}>{
+                      (innerLinks ?? []).map(({
+                          name,
+                          items
+                      }) => {
+                        return (
+                            <div>
+                              <span>{name}</span>
+                              {
+                                items.map(({
+                                  name,
+                                  link
+                                }) => {
+                                  return (
+                                      <Link href={link}>{name}</Link>
+                                  )
+                                })
+                              }
+                            </div>
+                        )
+                      })
+                    }</div>
+                  </div>
+              )
+            })
+          }
         </div>
         <div className={cls.search}>
           <Image src={"/search.png"} alt="search" width={30} height={30} />
