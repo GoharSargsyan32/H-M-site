@@ -1,5 +1,4 @@
 import Head from 'next/head'
-import Image from 'next/image'
 import styles from '@/styles/Home.module.scss'
 import Sale from '@/components/sale/sale'
 import Pool from '@/components/pool/pool'
