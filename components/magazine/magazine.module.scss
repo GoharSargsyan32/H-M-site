@@ -1,0 +1,96 @@
+.magazine {
+    width: 100%;
+    height: 900px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #f4eddd;
+    margin-top: 3%;
+    
+
+    & > .up {
+        width: 100%;
+        height: 30%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 7%;
+        text-transform: uppercase;
+
+
+        & > h1 {
+            font-size: 55px;
+            font-weight: 600;
+        }
+
+        & > p {
+            
+        }
+
+        & > a{
+            color: black;
+        }
+    }
+
+    & > .down {
+        width: 100%;
+        height: 70%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0 10% 2% 10%;
+        gap: 2%;
+
+
+        & > div {
+            width: 30%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            background-color: white;
+
+            & > .up {
+                width: 100%;
+                height: 60%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+    
+            }
+
+            & > .down {
+                width: 100%;
+                height: 40%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                text-align: center;
+                gap: 50%;
+
+                & > div > p {
+                    font-size: 20px;
+                    font-weight: 400;
+                    text-transform: uppercase;
+                }
+
+                & > div > h1 {
+                    font-size: 20px;
+                    font-weight: 600;
+                }
+
+                & > a {
+                    color:  black;
+                    font-size: 20px;
+                }
+            }
+
+
+        }
+        
+    }
+}

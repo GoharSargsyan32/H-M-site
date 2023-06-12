@@ -21,59 +21,2202 @@ const headerMenu = [
           {
             name: "Shoes & Accessories",
             link: "/"
+          },
+          {
+            name: "Beauty",
+            link: "/"
+          },
+          {
+            name: "Underwear&Nightwear",
+            link: "/"
           }
         ]
       },
       {
-        name: "The essentials",
+        name: "Trending Now",
         items: [
           {
-            name: "The Collection",
+            name: "The Occasion Edit",
             link: "/"
           },
           {
-            name: "About",
+            name: "Beachwear Destination",
             link: "/"
           },
+          {
+            name: "Linen layers",
+            link: "/"
+          }, 
+          {
+            name: "H&M Edition",
+            link: "/"
+          },
+          {
+            name: "The Crochet Shop",
+            link: "/"
+          },
+          {
+            name: "Tik Tok Made Me Do It",
+            link: "/"
+          },
+          {
+            name: "H&M Willamsburg: The Galary",
+            link: "/"
+          }
         ]
       },
+
+      {
+        name: "Shop by Occasion",
+        items: [
+          {
+            name: "Wedding",
+            link: "/"
+          },
+          {
+            name: "Party Wear",
+            link: "/"
+          },
+          {
+            name: "Office Wear",
+            link: "/"
+          },
+          
+        ]
+      },
+
+      {
+        name: "Offers",
+        items: [
+          {
+            name: "Student Discount",
+            link: "/"
+          },
+          {
+            name: "Sale up to 60% off",
+            link: "/"
+          },
+          
+        ]
+      },
+
+      {
+        name: "Shop by Products",
+        items: [
+          {
+            name: "View All",
+            link: "/"
+          },
+          {
+            name: "Plus Sizes",
+            link: "/"
+          },
+          {
+            name: "Dresses",
+            link: "/"
+          }, 
+          {
+            name: "Tops",
+            link: "/"
+          },
+          {
+            name: "Shirts & Blouses",
+            link: "/"
+          },
+          {
+            name: "Pants",
+            link: "/"
+          },
+          {
+            name: "Blazers & Vests",
+            link: "/"
+          },
+          {
+            name: "Jeans",
+            link: "/"
+          },
+          {
+            name: "Jumpsuits, Rompers & Overalls",
+            link: "/"
+          },
+          {
+            name: "Skirts",
+            link: "/"
+          },
+          {
+            name: "Shoes",
+            link: "/"
+          },
+          {
+            name: "Accesories",
+            link: "/"
+          },
+          {
+            name: "Swimwear & Beachwear",
+            link: "/"
+          },
+          {
+            name: "Shorts",
+            link: "/"
+          },
+          {
+            name: "Basics",
+            link: "/"
+          },
+          {
+            name: "Cardigans & Sweaters",
+            link: "/"
+          },
+          {
+            name: "Jackets & Coats",
+            link: "/"
+          },
+          {
+            name: "Hoodies & Sweatshirts",
+            link: "/"
+          },
+          {
+            name: "Lingerie",
+            link: "/"
+          },
+          {
+            name: "Loungewear",
+            link: "/"
+          },
+          {
+            name: "Sleepwear",
+            link: "/"
+          },
+          {
+            name: "Socks & Tights",
+            link: "/"
+          },
+          {
+            name: "Sportswear",
+            link: "/"
+          },
+          {
+            name: "Maternity Wear",
+            link: "/"
+          },
+          {
+            name: "Premium Selection",
+            link: "/"
+          },
+          {
+            name: "Beauty",
+            link: "/"
+          },
+          {
+            name: "Care Products",
+            link: "/"
+          }
+        ]
+      },
+
+      {
+        name: "Second Hand",
+        items: [
+          {
+            name: "H&M x thredUP",
+            link: "/"
+          },
+                    
+        ]
+      },
+      {
+        name: "Gifting",
+        items: [
+          {
+            name: "Gift Card",
+            link: "/"
+          },
+                  
+        ]
+      },
+      {
+        name: "Sustainability",
+        items: [
+          {
+            name: "H&M Take Care",
+            link: "/"
+          },
+          {
+            name: "Learn More",
+            link: "/"
+          },
+          
+        ]
+      },
+      {
+        name: "Magazine",
+        items: [
+          {
+            name: "Magazine",
+            link: "/"
+          },     
+          
+        ]
+      },
+
     ]
   },
+
+
+
   {
     name: "Men",
     link: "/",
+    innerLinks: [
+      {
+        name: "New Arrivals",
+        items: [
+          {
+            name: "View All",
+            link: "/"
+          },
+          {
+            name: "Clothes",
+            link: "/"
+          },
+          {
+            name: "Shoes & Accessories",
+            link: "/"
+          },
+          {
+            name: "Beauty",
+            link: "/"
+          },
+          {
+            name: "Underwear&Nightwear",
+            link: "/"
+          }
+        ]
+      },
+      {
+        name: "Trending Now",
+        items: [
+          {
+            name: "The Occasion Edit",
+            link: "/"
+          },
+          {
+            name: "Beachwear Destination",
+            link: "/"
+          },
+          {
+            name: "Linen layers",
+            link: "/"
+          }, 
+          {
+            name: "H&M Edition",
+            link: "/"
+          },
+          {
+            name: "The Crochet Shop",
+            link: "/"
+          },
+          {
+            name: "Tik Tok Made Me Do It",
+            link: "/"
+          },
+          {
+            name: "H&M Willamsburg: The Galary",
+            link: "/"
+          }
+        ]
+      },
+
+      {
+        name: "Shop by Occasion",
+        items: [
+          {
+            name: "Wedding",
+            link: "/"
+          },
+          {
+            name: "Party Wear",
+            link: "/"
+          },
+          {
+            name: "Office Wear",
+            link: "/"
+          },
+          
+        ]
+      },
+
+      {
+        name: "Offers",
+        items: [
+          {
+            name: "Student Discount",
+            link: "/"
+          },
+          {
+            name: "Sale up to 60% off",
+            link: "/"
+          },
+          
+        ]
+      },
+
+      {
+        name: "Shop by Products",
+        items: [
+          {
+            name: "View All",
+            link: "/"
+          },
+          {
+            name: "Plus Sizes",
+            link: "/"
+          },
+          {
+            name: "Dresses",
+            link: "/"
+          }, 
+          {
+            name: "Tops",
+            link: "/"
+          },
+          {
+            name: "Shirts & Blouses",
+            link: "/"
+          },
+          {
+            name: "Pants",
+            link: "/"
+          },
+          {
+            name: "Blazers & Vests",
+            link: "/"
+          },
+          {
+            name: "Jeans",
+            link: "/"
+          },
+          {
+            name: "Jumpsuits, Rompers & Overalls",
+            link: "/"
+          },
+          {
+            name: "Skirts",
+            link: "/"
+          },
+          {
+            name: "Shoes",
+            link: "/"
+          },
+          {
+            name: "Accesories",
+            link: "/"
+          },
+          {
+            name: "Swimwear & Beachwear",
+            link: "/"
+          },
+          {
+            name: "Shorts",
+            link: "/"
+          },
+          {
+            name: "Basics",
+            link: "/"
+          },
+          {
+            name: "Cardigans & Sweaters",
+            link: "/"
+          },
+          {
+            name: "Jackets & Coats",
+            link: "/"
+          },
+          {
+            name: "Hoodies & Sweatshirts",
+            link: "/"
+          },
+          {
+            name: "Lingerie",
+            link: "/"
+          },
+          {
+            name: "Loungewear",
+            link: "/"
+          },
+          {
+            name: "Sleepwear",
+            link: "/"
+          },
+          {
+            name: "Socks & Tights",
+            link: "/"
+          },
+          {
+            name: "Sportswear",
+            link: "/"
+          },
+          {
+            name: "Maternity Wear",
+            link: "/"
+          },
+          {
+            name: "Premium Selection",
+            link: "/"
+          },
+          {
+            name: "Beauty",
+            link: "/"
+          },
+          {
+            name: "Care Products",
+            link: "/"
+          }
+        ]
+      },
+
+      {
+        name: "Second Hand",
+        items: [
+          {
+            name: "H&M x thredUP",
+            link: "/"
+          },
+                    
+        ]
+      },
+      {
+        name: "Gifting",
+        items: [
+          {
+            name: "Gift Card",
+            link: "/"
+          },
+                  
+        ]
+      },
+      {
+        name: "Sustainability",
+        items: [
+          {
+            name: "H&M Take Care",
+            link: "/"
+          },
+          {
+            name: "Learn More",
+            link: "/"
+          },
+          
+        ]
+      },
+      {
+        name: "Magazine",
+        items: [
+          {
+            name: "Magazine",
+            link: "/"
+          },     
+          
+        ]
+      },
+
+    ]
   },
+
+
+
   {
     name: "Divided",
-    link: "/"
+    link: "/",
+    innerLinks: [
+      {
+        name: "New Arrivals",
+        items: [
+          {
+            name: "View All",
+            link: "/"
+          },
+          {
+            name: "Clothes",
+            link: "/"
+          },
+          {
+            name: "Shoes & Accessories",
+            link: "/"
+          },
+          {
+            name: "Beauty",
+            link: "/"
+          },
+          {
+            name: "Underwear&Nightwear",
+            link: "/"
+          }
+        ]
+      },
+      {
+        name: "Trending Now",
+        items: [
+          {
+            name: "The Occasion Edit",
+            link: "/"
+          },
+          {
+            name: "Beachwear Destination",
+            link: "/"
+          },
+          {
+            name: "Linen layers",
+            link: "/"
+          }, 
+          {
+            name: "H&M Edition",
+            link: "/"
+          },
+          {
+            name: "The Crochet Shop",
+            link: "/"
+          },
+          {
+            name: "Tik Tok Made Me Do It",
+            link: "/"
+          },
+          {
+            name: "H&M Willamsburg: The Galary",
+            link: "/"
+          }
+        ]
+      },
+
+      {
+        name: "Shop by Occasion",
+        items: [
+          {
+            name: "Wedding",
+            link: "/"
+          },
+          {
+            name: "Party Wear",
+            link: "/"
+          },
+          {
+            name: "Office Wear",
+            link: "/"
+          },
+          
+        ]
+      },
+
+      {
+        name: "Offers",
+        items: [
+          {
+            name: "Student Discount",
+            link: "/"
+          },
+          {
+            name: "Sale up to 60% off",
+            link: "/"
+          },
+          
+        ]
+      },
+
+      {
+        name: "Shop by Products",
+        items: [
+          {
+            name: "View All",
+            link: "/"
+          },
+          {
+            name: "Plus Sizes",
+            link: "/"
+          },
+          {
+            name: "Dresses",
+            link: "/"
+          }, 
+          {
+            name: "Tops",
+            link: "/"
+          },
+          {
+            name: "Shirts & Blouses",
+            link: "/"
+          },
+          {
+            name: "Pants",
+            link: "/"
+          },
+          {
+            name: "Blazers & Vests",
+            link: "/"
+          },
+          {
+            name: "Jeans",
+            link: "/"
+          },
+          {
+            name: "Jumpsuits, Rompers & Overalls",
+            link: "/"
+          },
+          {
+            name: "Skirts",
+            link: "/"
+          },
+          {
+            name: "Shoes",
+            link: "/"
+          },
+          {
+            name: "Accesories",
+            link: "/"
+          },
+          {
+            name: "Swimwear & Beachwear",
+            link: "/"
+          },
+          {
+            name: "Shorts",
+            link: "/"
+          },
+          {
+            name: "Basics",
+            link: "/"
+          },
+          {
+            name: "Cardigans & Sweaters",
+            link: "/"
+          },
+          {
+            name: "Jackets & Coats",
+            link: "/"
+          },
+          {
+            name: "Hoodies & Sweatshirts",
+            link: "/"
+          },
+          {
+            name: "Lingerie",
+            link: "/"
+          },
+          {
+            name: "Loungewear",
+            link: "/"
+          },
+          {
+            name: "Sleepwear",
+            link: "/"
+          },
+          {
+            name: "Socks & Tights",
+            link: "/"
+          },
+          {
+            name: "Sportswear",
+            link: "/"
+          },
+          {
+            name: "Maternity Wear",
+            link: "/"
+          },
+          {
+            name: "Premium Selection",
+            link: "/"
+          },
+          {
+            name: "Beauty",
+            link: "/"
+          },
+          {
+            name: "Care Products",
+            link: "/"
+          }
+        ]
+      },
+
+      {
+        name: "Second Hand",
+        items: [
+          {
+            name: "H&M x thredUP",
+            link: "/"
+          },
+                    
+        ]
+      },
+      {
+        name: "Gifting",
+        items: [
+          {
+            name: "Gift Card",
+            link: "/"
+          },
+                  
+        ]
+      },
+      {
+        name: "Sustainability",
+        items: [
+          {
+            name: "H&M Take Care",
+            link: "/"
+          },
+          {
+            name: "Learn More",
+            link: "/"
+          },
+          
+        ]
+      },
+      {
+        name: "Magazine",
+        items: [
+          {
+            name: "Magazine",
+            link: "/"
+          },     
+          
+        ]
+      },
+
+    ]
   },
+
+
+
+
+ 
   {
     name: "Baby",
-    link: "/"
+    link: "/",
+    innerLinks: [
+      {
+        name: "New Arrivals",
+        items: [
+          {
+            name: "View All",
+            link: "/"
+          },
+          {
+            name: "Clothes",
+            link: "/"
+          },
+          {
+            name: "Shoes & Accessories",
+            link: "/"
+          },
+          {
+            name: "Beauty",
+            link: "/"
+          },
+          {
+            name: "Underwear&Nightwear",
+            link: "/"
+          }
+        ]
+      },
+      {
+        name: "Trending Now",
+        items: [
+          {
+            name: "The Occasion Edit",
+            link: "/"
+          },
+          {
+            name: "Beachwear Destination",
+            link: "/"
+          },
+          {
+            name: "Linen layers",
+            link: "/"
+          }, 
+          {
+            name: "H&M Edition",
+            link: "/"
+          },
+          {
+            name: "The Crochet Shop",
+            link: "/"
+          },
+          {
+            name: "Tik Tok Made Me Do It",
+            link: "/"
+          },
+          {
+            name: "H&M Willamsburg: The Galary",
+            link: "/"
+          }
+        ]
+      },
+
+      {
+        name: "Shop by Occasion",
+        items: [
+          {
+            name: "Wedding",
+            link: "/"
+          },
+          {
+            name: "Party Wear",
+            link: "/"
+          },
+          {
+            name: "Office Wear",
+            link: "/"
+          },
+          
+        ]
+      },
+
+      {
+        name: "Offers",
+        items: [
+          {
+            name: "Student Discount",
+            link: "/"
+          },
+          {
+            name: "Sale up to 60% off",
+            link: "/"
+          },
+          
+        ]
+      },
+
+      {
+        name: "Shop by Products",
+        items: [
+          {
+            name: "View All",
+            link: "/"
+          },
+          {
+            name: "Plus Sizes",
+            link: "/"
+          },
+          {
+            name: "Dresses",
+            link: "/"
+          }, 
+          {
+            name: "Tops",
+            link: "/"
+          },
+          {
+            name: "Shirts & Blouses",
+            link: "/"
+          },
+          {
+            name: "Pants",
+            link: "/"
+          },
+          {
+            name: "Blazers & Vests",
+            link: "/"
+          },
+          {
+            name: "Jeans",
+            link: "/"
+          },
+          {
+            name: "Jumpsuits, Rompers & Overalls",
+            link: "/"
+          },
+          {
+            name: "Skirts",
+            link: "/"
+          },
+          {
+            name: "Shoes",
+            link: "/"
+          },
+          {
+            name: "Accesories",
+            link: "/"
+          },
+          {
+            name: "Swimwear & Beachwear",
+            link: "/"
+          },
+          {
+            name: "Shorts",
+            link: "/"
+          },
+          {
+            name: "Basics",
+            link: "/"
+          },
+          {
+            name: "Cardigans & Sweaters",
+            link: "/"
+          },
+          {
+            name: "Jackets & Coats",
+            link: "/"
+          },
+          {
+            name: "Hoodies & Sweatshirts",
+            link: "/"
+          },
+          {
+            name: "Lingerie",
+            link: "/"
+          },
+          {
+            name: "Loungewear",
+            link: "/"
+          },
+          {
+            name: "Sleepwear",
+            link: "/"
+          },
+          {
+            name: "Socks & Tights",
+            link: "/"
+          },
+          {
+            name: "Sportswear",
+            link: "/"
+          },
+          {
+            name: "Maternity Wear",
+            link: "/"
+          },
+          {
+            name: "Premium Selection",
+            link: "/"
+          },
+          {
+            name: "Beauty",
+            link: "/"
+          },
+          {
+            name: "Care Products",
+            link: "/"
+          }
+        ]
+      },
+
+      {
+        name: "Second Hand",
+        items: [
+          {
+            name: "H&M x thredUP",
+            link: "/"
+          },
+                    
+        ]
+      },
+      {
+        name: "Gifting",
+        items: [
+          {
+            name: "Gift Card",
+            link: "/"
+          },
+                  
+        ]
+      },
+      {
+        name: "Sustainability",
+        items: [
+          {
+            name: "H&M Take Care",
+            link: "/"
+          },
+          {
+            name: "Learn More",
+            link: "/"
+          },
+          
+        ]
+      },
+      {
+        name: "Magazine",
+        items: [
+          {
+            name: "Magazine",
+            link: "/"
+          },     
+          
+        ]
+      },
+
+    ]
   },
+
+
   {
     name: "Kids",
-    link: "/"
+    link: "/",
+    innerLinks: [
+      {
+        name: "New Arrivals",
+        items: [
+          {
+            name: "View All",
+            link: "/"
+          },
+          {
+            name: "Clothes",
+            link: "/"
+          },
+          {
+            name: "Shoes & Accessories",
+            link: "/"
+          },
+          {
+            name: "Beauty",
+            link: "/"
+          },
+          {
+            name: "Underwear&Nightwear",
+            link: "/"
+          }
+        ]
+      },
+      {
+        name: "Trending Now",
+        items: [
+          {
+            name: "The Occasion Edit",
+            link: "/"
+          },
+          {
+            name: "Beachwear Destination",
+            link: "/"
+          },
+          {
+            name: "Linen layers",
+            link: "/"
+          }, 
+          {
+            name: "H&M Edition",
+            link: "/"
+          },
+          {
+            name: "The Crochet Shop",
+            link: "/"
+          },
+          {
+            name: "Tik Tok Made Me Do It",
+            link: "/"
+          },
+          {
+            name: "H&M Willamsburg: The Galary",
+            link: "/"
+          }
+        ]
+      },
+
+      {
+        name: "Shop by Occasion",
+        items: [
+          {
+            name: "Wedding",
+            link: "/"
+          },
+          {
+            name: "Party Wear",
+            link: "/"
+          },
+          {
+            name: "Office Wear",
+            link: "/"
+          },
+          
+        ]
+      },
+
+      {
+        name: "Offers",
+        items: [
+          {
+            name: "Student Discount",
+            link: "/"
+          },
+          {
+            name: "Sale up to 60% off",
+            link: "/"
+          },
+          
+        ]
+      },
+
+      {
+        name: "Shop by Products",
+        items: [
+          {
+            name: "View All",
+            link: "/"
+          },
+          {
+            name: "Plus Sizes",
+            link: "/"
+          },
+          {
+            name: "Dresses",
+            link: "/"
+          }, 
+          {
+            name: "Tops",
+            link: "/"
+          },
+          {
+            name: "Shirts & Blouses",
+            link: "/"
+          },
+          {
+            name: "Pants",
+            link: "/"
+          },
+          {
+            name: "Blazers & Vests",
+            link: "/"
+          },
+          {
+            name: "Jeans",
+            link: "/"
+          },
+          {
+            name: "Jumpsuits, Rompers & Overalls",
+            link: "/"
+          },
+          {
+            name: "Skirts",
+            link: "/"
+          },
+          {
+            name: "Shoes",
+            link: "/"
+          },
+          {
+            name: "Accesories",
+            link: "/"
+          },
+          {
+            name: "Swimwear & Beachwear",
+            link: "/"
+          },
+          {
+            name: "Shorts",
+            link: "/"
+          },
+          {
+            name: "Basics",
+            link: "/"
+          },
+          {
+            name: "Cardigans & Sweaters",
+            link: "/"
+          },
+          {
+            name: "Jackets & Coats",
+            link: "/"
+          },
+          {
+            name: "Hoodies & Sweatshirts",
+            link: "/"
+          },
+          {
+            name: "Lingerie",
+            link: "/"
+          },
+          {
+            name: "Loungewear",
+            link: "/"
+          },
+          {
+            name: "Sleepwear",
+            link: "/"
+          },
+          {
+            name: "Socks & Tights",
+            link: "/"
+          },
+          {
+            name: "Sportswear",
+            link: "/"
+          },
+          {
+            name: "Maternity Wear",
+            link: "/"
+          },
+          {
+            name: "Premium Selection",
+            link: "/"
+          },
+          {
+            name: "Beauty",
+            link: "/"
+          },
+          {
+            name: "Care Products",
+            link: "/"
+          }
+        ]
+      },
+
+      {
+        name: "Second Hand",
+        items: [
+          {
+            name: "H&M x thredUP",
+            link: "/"
+          },
+                    
+        ]
+      },
+      {
+        name: "Gifting",
+        items: [
+          {
+            name: "Gift Card",
+            link: "/"
+          },
+                  
+        ]
+      },
+      {
+        name: "Sustainability",
+        items: [
+          {
+            name: "H&M Take Care",
+            link: "/"
+          },
+          {
+            name: "Learn More",
+            link: "/"
+          },
+          
+        ]
+      },
+      {
+        name: "Magazine",
+        items: [
+          {
+            name: "Magazine",
+            link: "/"
+          },     
+          
+        ]
+      },
+
+    ]
   },
+
+
+
   {
     name: "H&M HOME",
-    link: "/"
+    link: "/",
+    innerLinks: [
+      {
+        name: "New Arrivals",
+        items: [
+          {
+            name: "View All",
+            link: "/"
+          },
+          {
+            name: "Clothes",
+            link: "/"
+          },
+          {
+            name: "Shoes & Accessories",
+            link: "/"
+          },
+          {
+            name: "Beauty",
+            link: "/"
+          },
+          {
+            name: "Underwear&Nightwear",
+            link: "/"
+          }
+        ]
+      },
+      {
+        name: "Trending Now",
+        items: [
+          {
+            name: "The Occasion Edit",
+            link: "/"
+          },
+          {
+            name: "Beachwear Destination",
+            link: "/"
+          },
+          {
+            name: "Linen layers",
+            link: "/"
+          }, 
+          {
+            name: "H&M Edition",
+            link: "/"
+          },
+          {
+            name: "The Crochet Shop",
+            link: "/"
+          },
+          {
+            name: "Tik Tok Made Me Do It",
+            link: "/"
+          },
+          {
+            name: "H&M Willamsburg: The Galary",
+            link: "/"
+          }
+        ]
+      },
+
+      {
+        name: "Shop by Occasion",
+        items: [
+          {
+            name: "Wedding",
+            link: "/"
+          },
+          {
+            name: "Party Wear",
+            link: "/"
+          },
+          {
+            name: "Office Wear",
+            link: "/"
+          },
+          
+        ]
+      },
+
+      {
+        name: "Offers",
+        items: [
+          {
+            name: "Student Discount",
+            link: "/"
+          },
+          {
+            name: "Sale up to 60% off",
+            link: "/"
+          },
+          
+        ]
+      },
+
+      {
+        name: "Shop by Products",
+        items: [
+          {
+            name: "View All",
+            link: "/"
+          },
+          {
+            name: "Plus Sizes",
+            link: "/"
+          },
+          {
+            name: "Dresses",
+            link: "/"
+          }, 
+          {
+            name: "Tops",
+            link: "/"
+          },
+          {
+            name: "Shirts & Blouses",
+            link: "/"
+          },
+          {
+            name: "Pants",
+            link: "/"
+          },
+          {
+            name: "Blazers & Vests",
+            link: "/"
+          },
+          {
+            name: "Jeans",
+            link: "/"
+          },
+          {
+            name: "Jumpsuits, Rompers & Overalls",
+            link: "/"
+          },
+          {
+            name: "Skirts",
+            link: "/"
+          },
+          {
+            name: "Shoes",
+            link: "/"
+          },
+          {
+            name: "Accesories",
+            link: "/"
+          },
+          {
+            name: "Swimwear & Beachwear",
+            link: "/"
+          },
+          {
+            name: "Shorts",
+            link: "/"
+          },
+          {
+            name: "Basics",
+            link: "/"
+          },
+          {
+            name: "Cardigans & Sweaters",
+            link: "/"
+          },
+          {
+            name: "Jackets & Coats",
+            link: "/"
+          },
+          {
+            name: "Hoodies & Sweatshirts",
+            link: "/"
+          },
+          {
+            name: "Lingerie",
+            link: "/"
+          },
+          {
+            name: "Loungewear",
+            link: "/"
+          },
+          {
+            name: "Sleepwear",
+            link: "/"
+          },
+          {
+            name: "Socks & Tights",
+            link: "/"
+          },
+          {
+            name: "Sportswear",
+            link: "/"
+          },
+          {
+            name: "Maternity Wear",
+            link: "/"
+          },
+          {
+            name: "Premium Selection",
+            link: "/"
+          },
+          {
+            name: "Beauty",
+            link: "/"
+          },
+          {
+            name: "Care Products",
+            link: "/"
+          }
+        ]
+      },
+
+      {
+        name: "Second Hand",
+        items: [
+          {
+            name: "H&M x thredUP",
+            link: "/"
+          },
+                    
+        ]
+      },
+      {
+        name: "Gifting",
+        items: [
+          {
+            name: "Gift Card",
+            link: "/"
+          },
+                  
+        ]
+      },
+      {
+        name: "Sustainability",
+        items: [
+          {
+            name: "H&M Take Care",
+            link: "/"
+          },
+          {
+            name: "Learn More",
+            link: "/"
+          },
+          
+        ]
+      },
+      {
+        name: "Magazine",
+        items: [
+          {
+            name: "Magazine",
+            link: "/"
+          },     
+          
+        ]
+      },
+
+    ]
   },
-  {
-    name: "Beauty",
-    link: "/"
-  },
+
+
+
   {
     name: "Sport",
-    link: "/"
+    link: "/",
+    innerLinks: [
+      {
+        name: "New Arrivals",
+        items: [
+          {
+            name: "View All",
+            link: "/"
+          },
+          
+        ]
+      },
+      {
+        name: "Trending Now",
+        items: [
+          {
+            name: "The Occasion Edit",
+            link: "/"
+          },
+          
+          {
+            name: "The Crochet Shop",
+            link: "/"
+          },
+          {
+            name: "Tik Tok Made Me Do It",
+            link: "/"
+          },
+          {
+            name: "H&M Willamsburg: The Galary",
+            link: "/"
+          }
+        ]
+      },
+
+      {
+        name: "Shop by Occasion",
+        items: [
+          {
+            name: "Wedding",
+            link: "/"
+          },
+          {
+            name: "Party Wear",
+            link: "/"
+          },
+          {
+            name: "Office Wear",
+            link: "/"
+          },
+          
+        ]
+      },
+
+      {
+        name: "Offers",
+        items: [
+          {
+            name: "Student Discount",
+            link: "/"
+          },
+          {
+            name: "Sale up to 60% off",
+            link: "/"
+          },
+          
+        ]
+      },
+
+      
+
+      {
+        name: "Second Hand",
+        items: [
+          {
+            name: "H&M x thredUP",
+            link: "/"
+          },
+                    
+        ]
+      },
+      {
+        name: "Gifting",
+        items: [
+          {
+            name: "Gift Card",
+            link: "/"
+          },
+                  
+        ]
+      },
+      {
+        name: "Sustainability",
+        items: [
+          {
+            name: "H&M Take Care",
+            link: "/"
+          },
+          {
+            name: "Learn More",
+            link: "/"
+          },
+          
+        ]
+      },
+      {
+        name: "Magazine",
+        items: [
+          {
+            name: "Magazine",
+            link: "/"
+          },     
+          
+        ]
+      },
+
+    ]
   },
+
+
+  {
+    name: "Beauty",
+    link: "/",
+    innerLinks: [
+      {
+        name: "New Arrivals",
+        items: [
+          {
+            name: "View All",
+            link: "/"
+          },
+          
+        ]
+      },
+      {
+        name: "Trending Now",
+        items: [
+          {
+            name: "The Occasion Edit",
+            link: "/"
+          },
+          
+          {
+            name: "The Crochet Shop",
+            link: "/"
+          },
+          {
+            name: "Tik Tok Made Me Do It",
+            link: "/"
+          },
+          {
+            name: "H&M Willamsburg: The Galary",
+            link: "/"
+          }
+        ]
+      },
+
+      
+
+      {
+        name: "Offers",
+        items: [
+          {
+            name: "Student Discount",
+            link: "/"
+          },
+          {
+            name: "Sale up to 60% off",
+            link: "/"
+          },
+          
+        ]
+      },
+
+      {
+        name: "Shop by Products",
+        items: [
+          {
+            name: "View All",
+            link: "/"
+          },
+        
+          {
+            name: "Shirts & Blouses",
+            link: "/"
+          },
+          {
+            name: "Pants",
+            link: "/"
+          },
+          {
+            name: "Blazers & Vests",
+            link: "/"
+          },
+          {
+            name: "Jeans",
+            link: "/"
+          },
+          {
+            name: "Jumpsuits, Rompers & Overalls",
+            link: "/"
+          },
+          {
+            name: "Swimwear & Beachwear",
+            link: "/"
+          },
+          {
+            name: "Shorts",
+            link: "/"
+          },
+          {
+            name: "Basics",
+            link: "/"
+          },
+         
+          {
+            name: "Loungewear",
+            link: "/"
+          },
+          {
+            name: "Sleepwear",
+            link: "/"
+          },
+          {
+            name: "Socks & Tights",
+            link: "/"
+          },
+         
+          {
+            name: "Care Products",
+            link: "/"
+          }
+        ]
+      },
+
+      {
+        name: "Second Hand",
+        items: [
+          {
+            name: "H&M x thredUP",
+            link: "/"
+          },
+                    
+        ]
+      },
+      {
+        name: "Gifting",
+        items: [
+          {
+            name: "Gift Card",
+            link: "/"
+          },
+                  
+        ]
+      },
+      {
+        name: "Sustainability",
+        items: [
+          {
+            name: "H&M Take Care",
+            link: "/"
+          },
+          {
+            name: "Learn More",
+            link: "/"
+          },
+          
+        ]
+      },
+      {
+        name: "Magazine",
+        items: [
+          {
+            name: "Magazine",
+            link: "/"
+          },     
+          
+        ]
+      },
+
+    ]
+  },
+
+
+
   {
     name: "Sale",
-    link: "/"
+    link: "/",
+    innerLinks: [
+      {
+        name: "New Arrivals",
+        items: [
+          {
+            name: "View All",
+            link: "/"
+          },
+          
+        ]
+      },
+      {
+        name: "Trending Now",
+        items: [
+          {
+            name: "The Occasion Edit",
+            link: "/"
+          },
+          
+          {
+            name: "The Crochet Shop",
+            link: "/"
+          },
+          {
+            name: "Tik Tok Made Me Do It",
+            link: "/"
+          },
+          {
+            name: "H&M Willamsburg: The Galary",
+            link: "/"
+          }
+        ]
+      },
+
+      {
+        name: "Shop by Occasion",
+        items: [
+          {
+            name: "Wedding",
+            link: "/"
+          },
+          {
+            name: "Party Wear",
+            link: "/"
+          },
+          {
+            name: "Office Wear",
+            link: "/"
+          },
+          
+        ]
+      },
+
+      {
+        name: "Offers",
+        items: [
+          {
+            name: "Student Discount",
+            link: "/"
+          },
+          {
+            name: "Sale up to 60% off",
+            link: "/"
+          },
+          
+        ]
+      },
+
+      {
+        name: "Shop by Products",
+        items: [
+          {
+            name: "View All",
+            link: "/"
+          },
+        
+          {
+            name: "Shirts & Blouses",
+            link: "/"
+          },
+          {
+            name: "Pants",
+            link: "/"
+          },
+          {
+            name: "Blazers & Vests",
+            link: "/"
+          },
+          {
+            name: "Jeans",
+            link: "/"
+          },
+          {
+            name: "Jumpsuits, Rompers & Overalls",
+            link: "/"
+          },
+          {
+            name: "Swimwear & Beachwear",
+            link: "/"
+          },
+          {
+            name: "Shorts",
+            link: "/"
+          },
+          {
+            name: "Basics",
+            link: "/"
+          },
+         
+          {
+            name: "Loungewear",
+            link: "/"
+          },
+          {
+            name: "Sleepwear",
+            link: "/"
+          },
+          {
+            name: "Socks & Tights",
+            link: "/"
+          },
+         
+          {
+            name: "Care Products",
+            link: "/"
+          }
+        ]
+      },
+
+      {
+        name: "Second Hand",
+        items: [
+          {
+            name: "H&M x thredUP",
+            link: "/"
+          },
+                    
+        ]
+      },
+      {
+        name: "Gifting",
+        items: [
+          {
+            name: "Gift Card",
+            link: "/"
+          },
+                  
+        ]
+      },
+      {
+        name: "Sustainability",
+        items: [
+          {
+            name: "H&M Take Care",
+            link: "/"
+          },
+          {
+            name: "Learn More",
+            link: "/"
+          },
+          
+        ]
+      },
+      {
+        name: "Magazine",
+        items: [
+          {
+            name: "Magazine",
+            link: "/"
+          },     
+          
+        ]
+      },
+
+    ]
   },
+
+
+
   {
     name: "Sustainability",
-    link: "/"
+    link: "/",
+    innerLinks: [
+      {
+        name: "New Arrivals",
+        items: [
+          {
+            name: "View All",
+            link: "/"
+          },
+          
+        ]
+      },
+      {
+        name: "Trending Now",
+        items: [
+          {
+            name: "The Occasion Edit",
+            link: "/"
+          },
+          
+          {
+            name: "The Crochet Shop",
+            link: "/"
+          },
+          {
+            name: "Tik Tok Made Me Do It",
+            link: "/"
+          },
+          {
+            name: "H&M Willamsburg: The Galary",
+            link: "/"
+          }
+        ]
+      },
+
+      {
+        name: "Shop by Occasion",
+        items: [
+          {
+            name: "Wedding",
+            link: "/"
+          },
+          {
+            name: "Party Wear",
+            link: "/"
+          },
+          {
+            name: "Office Wear",
+            link: "/"
+          },
+          
+        ]
+      },
+
+      {
+        name: "Offers",
+        items: [
+          {
+            name: "Student Discount",
+            link: "/"
+          },
+          {
+            name: "Sale up to 60% off",
+            link: "/"
+          },
+          
+        ]
+      },
+
+      {
+        name: "Shop by Products",
+        items: [
+          {
+            name: "View All",
+            link: "/"
+          },
+        
+          {
+            name: "Shirts & Blouses",
+            link: "/"
+          },
+          {
+            name: "Pants",
+            link: "/"
+          },
+          {
+            name: "Blazers & Vests",
+            link: "/"
+          },
+          {
+            name: "Jeans",
+            link: "/"
+          },
+          {
+            name: "Jumpsuits, Rompers & Overalls",
+            link: "/"
+          },
+          {
+            name: "Swimwear & Beachwear",
+            link: "/"
+          },
+          {
+            name: "Shorts",
+            link: "/"
+          },
+          {
+            name: "Basics",
+            link: "/"
+          },
+         
+          {
+            name: "Loungewear",
+            link: "/"
+          },
+          {
+            name: "Sleepwear",
+            link: "/"
+          },
+          {
+            name: "Socks & Tights",
+            link: "/"
+          },
+         
+          {
+            name: "Care Products",
+            link: "/"
+          }
+        ]
+      },
+
+      {
+        name: "Second Hand",
+        items: [
+          {
+            name: "H&M x thredUP",
+            link: "/"
+          },
+                    
+        ]
+      },
+      {
+        name: "Gifting",
+        items: [
+          {
+            name: "Gift Card",
+            link: "/"
+          },
+                  
+        ]
+      },
+      {
+        name: "Sustainability",
+        items: [
+          {
+            name: "H&M Take Care",
+            link: "/"
+          },
+          {
+            name: "Learn More",
+            link: "/"
+          },
+          
+        ]
+      },
+      {
+        name: "Magazine",
+        items: [
+          {
+            name: "Magazine",
+            link: "/"
+          },     
+          
+        ]
+      },
+
+    ]
   },
 ]
 

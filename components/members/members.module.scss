@@ -1,0 +1,22 @@
+.members {
+    width: 70%;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    gap: 3%;
+    background-color: #f1ebdf;
+    padding: 0 7% 0 7%;
+    margin: 3%;
+
+    & > h1 {
+        color: red;
+        font-size: 35px;
+    }
+
+    & > p {
+        font-size: 15px;
+    }
+}

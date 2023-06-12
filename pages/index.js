@@ -3,6 +3,10 @@ import styles from '@/styles/Home.module.scss'
 import Sale from '@/components/sale/sale'
 import Pool from '@/components/pool/pool'
 import Women from '@/components/women/women'
+import Members from '@/components/members/members'
+import Pants from '@/components/pants/pants'
+import Nature from '@/components/nature/nature'
+import Magazine from '@/components/magazine/magazine'
 
 export default function Home() {
   return (
@@ -17,6 +21,10 @@ export default function Home() {
            <Sale/>
            <Pool/>
            <Women/>
+           <Members/>
+           <Pants/>
+           <Nature/>
+           <Magazine/>
       </main>
     </>
   )
