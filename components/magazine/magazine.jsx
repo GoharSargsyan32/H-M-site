@@ -44,13 +44,11 @@ const Magazine = () => {
           <div className={cls.down}>
             <div>
               <p>Inside H&M</p>
-              <h1>GCA 2023: Ten game-changing innovations to know now</h1>
+              <h1>GCA 2023: Ten game-changing <br></br>innovations to know now</h1>
             </div>
-
             <Link href={""}>Read The Story</Link>
           </div>
-        </div>
-        
+        </div>      
         
       </div>
     </div>

@@ -1,0 +1,81 @@
+.sale {
+    width: 100%;
+    height: 1000px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: -4%;
+
+& > .links {
+    width: 100%;
+    height: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15%;
+
+    & > a {
+        text-decoration: none;
+        color: black;
+        font-size: 20px;
+    }
+
+    & > a:hover {
+        text-decoration: underline;
+    }
+}
+
+& > .square {
+    width: 100%;
+    height: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    & > .red {
+        width: 70%;
+        height: 90%;
+        background-color: rgb(188, 13, 13);
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+
+        & > p {
+            font-size: 30px;
+        }
+
+        & > h1 {
+            font-size: 120px;
+        }
+         & > span {
+            font-size: 35px;
+         }
+
+            & > .buttons {
+            width: 800px;
+            height: 100px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 3%;
+           
+            & > button {
+                border:  none;
+                min-width: 110px;
+                height: 45px;
+                font-size: 22px;
+                font-weight: 500;
+                cursor: pointer;
+            }
+
+            & > button:hover {
+                background-color: rgb(212, 207, 207);
+            }
+         }
+    }
+}
+
+}

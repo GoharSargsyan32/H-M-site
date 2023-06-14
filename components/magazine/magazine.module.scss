@@ -59,7 +59,10 @@
                 display: flex;
                 justify-content: center;
                 align-items: center;
-    
+
+                & > img {
+                    width: 100%;
+                }    
             }
 
             & > .down {
@@ -70,7 +73,7 @@
                 align-items: center;
                 flex-direction: column;
                 text-align: center;
-                gap: 50%;
+                gap: 40%;
 
                 & > div > p {
                     font-size: 20px;

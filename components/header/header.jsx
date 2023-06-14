@@ -287,59 +287,17 @@ const headerMenu = [
             name: "Beauty",
             link: "/"
           },
-          {
-            name: "Underwear&Nightwear",
-            link: "/"
-          }
         ]
       },
       {
-        name: "Trending Now",
+        name: "The essentlals",
         items: [
           {
-            name: "The Occasion Edit",
+            name: "The Collection",
             link: "/"
           },
           {
-            name: "Beachwear Destination",
-            link: "/"
-          },
-          {
-            name: "Linen layers",
-            link: "/"
-          }, 
-          {
-            name: "H&M Edition",
-            link: "/"
-          },
-          {
-            name: "The Crochet Shop",
-            link: "/"
-          },
-          {
-            name: "Tik Tok Made Me Do It",
-            link: "/"
-          },
-          {
-            name: "H&M Willamsburg: The Galary",
-            link: "/"
-          }
-        ]
-      },
-
-      {
-        name: "Shop by Occasion",
-        items: [
-          {
-            name: "Wedding",
-            link: "/"
-          },
-          {
-            name: "Party Wear",
-            link: "/"
-          },
-          {
-            name: "Office Wear",
+            name: "About",
             link: "/"
           },
           
@@ -347,17 +305,67 @@ const headerMenu = [
       },
 
       {
-        name: "Offers",
+        name: "Summer lookbook",
         items: [
           {
-            name: "Student Discount",
+            name: "Casual looks",
             link: "/"
           },
+          {
+            name: "Smart looks",
+            link: "/"
+          },
+          {
+            name: "Street looks",
+            link: "/"
+          },
+          
+        ]
+      },
+
+      {
+        name: "Offers and Deals",
+        items: [
           {
             name: "Sale up to 60% off",
             link: "/"
           },
+          {
+            name: "Socks: B2G1",
+            link: "/"
+          },
+          {
+            name: "Student Discount",
+            link: "/"
+          },
           
+        ]
+      },
+
+      {
+        name: "Trending Now",
+        items: [
+          {
+            name: "The Summer Shop",
+            link: "/"
+          },
+          {
+            name: "Tailored looks",
+            link: "/"
+          },
+          {
+            name: "The Linen Shop",
+            link: "/"
+          },
+          {
+            name: "Top sellers from %6.99",
+            link: "/"
+          },
+          {
+            name: "The Graphic Shops",
+            link: "/"
+          },
+                    
         ]
       },
 
@@ -366,18 +374,6 @@ const headerMenu = [
         items: [
           {
             name: "View All",
-            link: "/"
-          },
-          {
-            name: "Plus Sizes",
-            link: "/"
-          },
-          {
-            name: "Dresses",
-            link: "/"
-          }, 
-          {
-            name: "Tops",
             link: "/"
           },
           {
@@ -394,14 +390,6 @@ const headerMenu = [
           },
           {
             name: "Jeans",
-            link: "/"
-          },
-          {
-            name: "Jumpsuits, Rompers & Overalls",
-            link: "/"
-          },
-          {
-            name: "Skirts",
             link: "/"
           },
           {
@@ -436,14 +424,7 @@ const headerMenu = [
             name: "Hoodies & Sweatshirts",
             link: "/"
           },
-          {
-            name: "Lingerie",
-            link: "/"
-          },
-          {
-            name: "Loungewear",
-            link: "/"
-          },
+         
           {
             name: "Sleepwear",
             link: "/"
@@ -456,10 +437,7 @@ const headerMenu = [
             name: "Sportswear",
             link: "/"
           },
-          {
-            name: "Maternity Wear",
-            link: "/"
-          },
+         
           {
             name: "Premium Selection",
             link: "/"
@@ -475,16 +453,7 @@ const headerMenu = [
         ]
       },
 
-      {
-        name: "Second Hand",
-        items: [
-          {
-            name: "H&M x thredUP",
-            link: "/"
-          },
-                    
-        ]
-      },
+     
       {
         name: "Gifting",
         items: [
@@ -506,16 +475,6 @@ const headerMenu = [
             name: "Learn More",
             link: "/"
           },
-          
-        ]
-      },
-      {
-        name: "Magazine",
-        items: [
-          {
-            name: "Magazine",
-            link: "/"
-          },     
           
         ]
       },
@@ -532,10 +491,7 @@ const headerMenu = [
       {
         name: "New Arrivals",
         items: [
-          {
-            name: "View All",
-            link: "/"
-          },
+         
           {
             name: "Clothes",
             link: "/"
@@ -544,71 +500,12 @@ const headerMenu = [
             name: "Shoes & Accessories",
             link: "/"
           },
-          {
-            name: "Beauty",
-            link: "/"
-          },
-          {
-            name: "Underwear&Nightwear",
-            link: "/"
-          }
-        ]
-      },
-      {
-        name: "Trending Now",
-        items: [
-          {
-            name: "The Occasion Edit",
-            link: "/"
-          },
-          {
-            name: "Beachwear Destination",
-            link: "/"
-          },
-          {
-            name: "Linen layers",
-            link: "/"
-          }, 
-          {
-            name: "H&M Edition",
-            link: "/"
-          },
-          {
-            name: "The Crochet Shop",
-            link: "/"
-          },
-          {
-            name: "Tik Tok Made Me Do It",
-            link: "/"
-          },
-          {
-            name: "H&M Willamsburg: The Galary",
-            link: "/"
-          }
-        ]
-      },
-
-      {
-        name: "Shop by Occasion",
-        items: [
-          {
-            name: "Wedding",
-            link: "/"
-          },
-          {
-            name: "Party Wear",
-            link: "/"
-          },
-          {
-            name: "Office Wear",
-            link: "/"
-          },
           
         ]
       },
 
       {
-        name: "Offers",
+        name: "Offers and Deals",
         items: [
           {
             name: "Student Discount",
@@ -618,9 +515,50 @@ const headerMenu = [
             name: "Sale up to 60% off",
             link: "/"
           },
+          {
+            name: "Sale: Dresses from $3.99",
+            link: "/"
+          },        
           
         ]
       },
+      {
+        name: "Trending Now",
+        items: [
+          {
+            name: "Grad, Prom & More",
+            link: "/"
+          },
+          {
+            name: "Summer Concert Fits",
+            link: "/"
+          },
+          {
+            name: "Music, Movies & Logos",
+            link: "/"
+          }, 
+          {
+            name: "#coastalcowgirl",
+            link: "/"
+          },
+          {
+            name: "#hyperfemininie",
+            link: "/"
+          },
+          {
+            name: "#scandistyle",
+            link: "/"
+          },
+          {
+            name: "#mermaidcore",
+            link: "/"
+          },
+          {
+            name: "Tik Tok Made Me Do It",
+            link: "/"
+          }
+        ]
+      },     
 
       {
         name: "Shop by Products",
@@ -630,7 +568,7 @@ const headerMenu = [
             link: "/"
           },
           {
-            name: "Plus Sizes",
+            name: "Tops",
             link: "/"
           },
           {
@@ -638,17 +576,14 @@ const headerMenu = [
             link: "/"
           }, 
           {
-            name: "Tops",
+            name: "Pants & Leggings",
             link: "/"
           },
           {
             name: "Shirts & Blouses",
             link: "/"
           },
-          {
-            name: "Pants",
-            link: "/"
-          },
+          
           {
             name: "Blazers & Vests",
             link: "/"
@@ -658,7 +593,7 @@ const headerMenu = [
             link: "/"
           },
           {
-            name: "Jumpsuits, Rompers & Overalls",
+            name: "Jumpsuits, Rompers",
             link: "/"
           },
           {
@@ -698,14 +633,6 @@ const headerMenu = [
             link: "/"
           },
           {
-            name: "Lingerie",
-            link: "/"
-          },
-          {
-            name: "Loungewear",
-            link: "/"
-          },
-          {
             name: "Sleepwear",
             link: "/"
           },
@@ -717,14 +644,7 @@ const headerMenu = [
             name: "Sportswear",
             link: "/"
           },
-          {
-            name: "Maternity Wear",
-            link: "/"
-          },
-          {
-            name: "Premium Selection",
-            link: "/"
-          },
+         
           {
             name: "Beauty",
             link: "/"
@@ -767,103 +687,75 @@ const headerMenu = [
             name: "Learn More",
             link: "/"
           },
-          
-        ]
-      },
-      {
-        name: "Magazine",
-        items: [
-          {
-            name: "Magazine",
-            link: "/"
-          },     
           
         ]
       },
 
     ]
   },
-
-
-
-
  
   {
     name: "Baby",
     link: "/",
     innerLinks: [
+      
       {
-        name: "New Arrivals",
+        name: "Offers and Deals",
+        items: [
+          {
+            name: "Student Discount",
+            link: "/"
+          },
+          {
+            name: "Sale up to 60% off",
+            link: "/"
+          },     
+          
+        ]
+      },
+      {
+        name: "Popular Now",
+        items: [
+          {
+            name: "Baby shower gifts",
+            link: "/"
+          },
+          {
+            name: "Red, White & Blue from $6.99",
+            link: "/"
+          },
+          {
+            name: "Disney Clothes for Baby",
+            link: "/"
+          }, 
+          {
+            name: "Hospital Bag",
+            link: "/"
+          },
+          {
+            name: "Summer Essentials from $4.99",
+            link: "/"
+          },
+          {
+            name: "Basics & Multipacks from $6.99",
+            link: "/"
+          },
+        ]
+      },
+
+      {
+        name: "Newborn",
         items: [
           {
             name: "View All",
             link: "/"
           },
           {
-            name: "Clothes",
+            name: "New arrivals",
             link: "/"
           },
           {
-            name: "Shoes & Accessories",
-            link: "/"
-          },
-          {
-            name: "Beauty",
-            link: "/"
-          },
-          {
-            name: "Underwear&Nightwear",
-            link: "/"
-          }
-        ]
-      },
-      {
-        name: "Trending Now",
-        items: [
-          {
-            name: "The Occasion Edit",
-            link: "/"
-          },
-          {
-            name: "Beachwear Destination",
-            link: "/"
-          },
-          {
-            name: "Linen layers",
-            link: "/"
-          }, 
-          {
-            name: "H&M Edition",
-            link: "/"
-          },
-          {
-            name: "The Crochet Shop",
-            link: "/"
-          },
-          {
-            name: "Tik Tok Made Me Do It",
-            link: "/"
-          },
-          {
-            name: "H&M Willamsburg: The Galary",
-            link: "/"
-          }
-        ]
-      },
-
-      {
-        name: "Shop by Occasion",
-        items: [
-          {
-            name: "Wedding",
-            link: "/"
-          },
-          {
-            name: "Party Wear",
-            link: "/"
-          },
-          {
-            name: "Office Wear",
+            name: "Clothing",
             link: "/"
           },
           
@@ -871,7 +763,7 @@ const headerMenu = [
       },
 
       {
-        name: "Offers",
+        name: "Baby Girl",
         items: [
           {
             name: "Student Discount",
@@ -886,7 +778,7 @@ const headerMenu = [
       },
 
       {
-        name: "Shop by Products",
+        name: "Baby Boy",
         items: [
           {
             name: "View All",
@@ -904,98 +796,23 @@ const headerMenu = [
             name: "Tops",
             link: "/"
           },
-          {
-            name: "Shirts & Blouses",
-            link: "/"
-          },
-          {
-            name: "Pants",
-            link: "/"
-          },
-          {
-            name: "Blazers & Vests",
-            link: "/"
-          },
-          {
-            name: "Jeans",
-            link: "/"
-          },
+         
           {
             name: "Jumpsuits, Rompers & Overalls",
             link: "/"
           },
-          {
-            name: "Skirts",
-            link: "/"
-          },
-          {
-            name: "Shoes",
-            link: "/"
-          },
-          {
-            name: "Accesories",
-            link: "/"
-          },
+         
           {
             name: "Swimwear & Beachwear",
             link: "/"
           },
-          {
-            name: "Shorts",
-            link: "/"
-          },
-          {
-            name: "Basics",
-            link: "/"
-          },
-          {
-            name: "Cardigans & Sweaters",
-            link: "/"
-          },
-          {
-            name: "Jackets & Coats",
-            link: "/"
-          },
-          {
-            name: "Hoodies & Sweatshirts",
-            link: "/"
-          },
-          {
-            name: "Lingerie",
-            link: "/"
-          },
-          {
-            name: "Loungewear",
-            link: "/"
-          },
-          {
-            name: "Sleepwear",
-            link: "/"
-          },
-          {
-            name: "Socks & Tights",
-            link: "/"
-          },
-          {
-            name: "Sportswear",
-            link: "/"
-          },
+          
+        
           {
             name: "Maternity Wear",
             link: "/"
           },
-          {
-            name: "Premium Selection",
-            link: "/"
-          },
-          {
-            name: "Beauty",
-            link: "/"
-          },
-          {
-            name: "Care Products",
-            link: "/"
-          }
+          
         ]
       },
 
@@ -1009,16 +826,7 @@ const headerMenu = [
                     
         ]
       },
-      {
-        name: "Gifting",
-        items: [
-          {
-            name: "Gift Card",
-            link: "/"
-          },
-                  
-        ]
-      },
+    
       {
         name: "Sustainability",
         items: [
@@ -1030,16 +838,6 @@ const headerMenu = [
             name: "Learn More",
             link: "/"
           },
-          
-        ]
-      },
-      {
-        name: "Magazine",
-        items: [
-          {
-            name: "Magazine",
-            link: "/"
-          },     
           
         ]
       },
@@ -2219,10 +2017,6 @@ const headerMenu = [
     ]
   },
 ]
-
-
-
-
 
 
 const Header = () => {
