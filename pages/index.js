@@ -10,6 +10,51 @@ import Magazine from '@/components/magazine/magazine'
 import BigSale from '@/components/bigSale/bigSale'
 import Footer from '@/components/footer/footer'
 
+const categories = [
+  {
+  name:"Women Tops", 
+  image: "/blouse.avif", 
+  link: ""
+  },
+  {
+    name:"Women Pants", 
+    image: "/trousers.avif", 
+    link: ""
+  },
+  {
+    name:"Women Dresses", 
+    image: "/dress.avif", 
+    link: ""
+  },
+  {
+      name:"Women Shirts & Blouses ", 
+      image: "/shirt.avif", 
+      link: ""
+  },
+  {
+    name:"Women Accsessories", 
+    image: "/bag.avif", 
+    link: ""
+  },
+
+  {
+    name:"Women Premium Selection", 
+    image: "/dress2.avif", 
+    link: ""
+  },
+  {
+    name:"Women Shoes", 
+    image: "/shoes.avif", 
+    link: ""
+  },{
+    name:"Women Jacket", 
+    image: "/jacket.avif", 
+    link: ""
+  },
+
+
+]
+
 export default function Home() {
   return (
     <>
@@ -31,7 +76,9 @@ export default function Home() {
             heading={"Welcome to the pool patry"}
             button={"Shop now"}
            />
-           <Women/>
+           <Women 
+             categories={categories}
+           />
            <Members/>
            <Pool
             image={"/summer.jfif"}
