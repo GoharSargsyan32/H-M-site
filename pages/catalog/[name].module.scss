@@ -1,0 +1,94 @@
+.catalog {
+  width: 100%;
+  height: 2000px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  & > .up {
+    width: 100%;
+    height: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+  }
+
+  & > .down {
+    width: 100%;
+    height: 95%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    & > .left {
+      width: 20%;
+      height: 100%;
+      display: flex;
+      justify-content: flex-start;
+      align-items: flex-start;
+      flex-direction: column;
+      font-size: 16px;
+      gap: 1%;
+
+      & > div {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 5px;
+        padding-top: 2%;
+
+        & > span {
+          font-weight: 800;
+        }
+
+        & > a {
+          text-decoration: none;
+          color: #000000;
+        }
+      }
+    }
+
+    & > .right {
+      width: 85%;
+      height: 100%;
+      display: flex;
+      justify-content: flex-start;
+      align-items: flex-start;
+      flex-direction: column;
+
+      & > .sale {
+        width: 100%;
+        height: 5%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        font-size: 30px;
+        font-weight: 600;
+        background-color: rgb(255, 100, 214);
+        color: white;
+      }
+
+      & > .items {
+        width: 100%;
+        height: 95%;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        flex-direction: column;
+
+        & > h1 {
+          text-transform: uppercase;
+          padding-left: 1%;
+          font-size: 40px;
+          letter-spacing: 2px;
+        }
+      }
+    }
+  }
+}

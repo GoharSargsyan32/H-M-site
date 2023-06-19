@@ -5,14 +5,14 @@ import Link from "next/link";
 const headerMenu = [
   {
     name: "Women",
-    link: "/",
+    link: "",
     innerLinks: [
       {
         name: "New Arrivals",
         items: [
           {
             name: "View All",
-            link: "/"
+            link: "http://localhost:3000/catalog/women"
           },
           {
             name: "Clothes",
@@ -2033,7 +2033,7 @@ const Header = () => {
         </div>
         <div className={`${cls.box} ${cls.box2}`}>
           <Image
-            src={"hm-logo-vector-1.svg"}
+            src={"/hm-logo-vector-1.svg"}
             alt="logo"
             width={100}
             height={100}

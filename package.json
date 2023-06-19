@@ -15,5 +15,8 @@
     "react-dom": "18.2.0",
     "sass": "^1.62.1",
     "swiper": "^9.4.1"
+  },
+  "devDependencies": {
+    "prettier": "^2.8.8"
   }
 }
