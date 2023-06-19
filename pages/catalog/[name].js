@@ -3,6 +3,7 @@ import { useRouter } from "next/router";
 import cls from "./[name].module.scss";
 import Image from "next/image";
 import Product from "@/components/product/product";
+import {useEffect, useState} from "react";
 
 const innerLinks = [
   {
@@ -254,10 +255,17 @@ const innerLinks = [
 
 const Catalog = ({}) => {
   const router = useRouter();
+  const [products, setProducts] = useState([])
+  useEffect(() => {
+    (async () => {
+      const response = await fetch("http://localhost:4200/products")
+      const data = await response.json()
+      setProducts(data.woman.newArrivals[router.query.name] ?? [])
+    })()
+  },[router])
   return (
     <div className={cls.catalog}>
       <div className={cls.up}>Catalog/{router.query.name}</div>
-
       <div className={cls.down}>
         <div className={cls.left}>
           {(innerLinks ?? []).map(({ name, items }) => {
@@ -277,7 +285,7 @@ const Catalog = ({}) => {
           </div>
           <div className={cls.items}>
             <h1>View All</h1>
-            <Product />
+            <Product products={products}/>
           </div>
         </div>
       </div>

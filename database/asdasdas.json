@@ -1,0 +1,42 @@
+{
+  "products": {
+    "woman": {
+      "newArrivals": {
+        "women_clothes": [
+          {
+            "id": 4,
+            "image": "/4.jfif",
+            "title": "Creped Slip Dress",
+            "price": "$24.99",
+            "newArrival": true,
+            "colors": []
+          }
+        ],
+        "shoesAccessories": [
+          {
+            "id": 5,
+            "image": "/4.jfif",
+            "title": "Creped Slip Dress",
+            "price": "$24.99",
+            "newArrival": true,
+            "colors": []
+          },
+          {
+            "id": 6,
+            "image": "/4.jfif",
+            "title": "Creped Slip Dress",
+            "price": "$24.99",
+            "newArrival": true,
+            "colors": []
+          }
+        ],
+        "beauty": [
+
+        ]
+      }
+    },
+    "man": {
+
+    }
+  }
+}

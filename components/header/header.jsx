@@ -5,22 +5,22 @@ import Link from "next/link";
 const headerMenu = [
   {
     name: "Women",
-    link: "",
+    link: "/",
     innerLinks: [
       {
         name: "New Arrivals",
         items: [
           {
             name: "View All",
-            link: "http://localhost:3000/catalog/women"
+            link: "/catalog/women"
           },
           {
             name: "Clothes",
-            link: "/"
+            link: "/catalog/women_clothes"
           },
           {
             name: "Shoes & Accessories",
-            link: "/"
+            link: "/catalog/shoesAccessories"
           },
           {
             name: "Beauty",

@@ -1,0 +1,41 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "image": "/1.jfif",
+      "title": "Ribbed one-shoulder top",
+      "price": "$12.99",
+      "newArrival": true,
+      "colors": [
+        {
+          "value": "#F0EEED",
+          "title": "White"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "image": "/2.jfif",
+      "title": "Oversize Resort Shirt",
+      "price": "$17.99",
+      "newArrival": true,
+      "colors": []
+    },
+    {
+      "id": 3,
+      "image": "/3.jfif",
+      "title": "Asymetric-hem Slip Dress",
+      "price": "$64.99",
+      "newArrival": true,
+      "colors": []
+    },
+    {
+      "id": 4,
+      "image": "/4.jfif",
+      "title": "Creped Slip Dress",
+      "price": "$24.99",
+      "newArrival": true,
+      "colors": []
+    }
+  ]
+}
