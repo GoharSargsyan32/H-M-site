@@ -4,6 +4,30 @@
       "newArrivals": {
         "women_clothes": [
           {
+            "id": 1,
+            "image": "/1.jfif",
+            "title": "Creped Slip Dress",
+            "price": "$24.99",
+            "newArrival": true,
+            "colors": []
+          },
+          {
+            "id": 2,
+            "image": "/2.jfif",
+            "title": "Creped Slip Dress",
+            "price": "$24.99",
+            "newArrival": true,
+            "colors": []
+          },
+          {
+            "id": 3,
+            "image": "/3.jfif",
+            "title": "Creped Slip Dress",
+            "price": "$24.99",
+            "newArrival": true,
+            "colors": []
+          },
+          {
             "id": 4,
             "image": "/4.jfif",
             "title": "Creped Slip Dress",
@@ -12,31 +36,182 @@
             "colors": []
           }
         ],
-        "shoesAccessories": [
+        "women_shoesAccessories": [
           {
-            "id": 5,
-            "image": "/4.jfif",
+            "id": 1,
+            "image": "/shoes1.jfif",
             "title": "Creped Slip Dress",
             "price": "$24.99",
             "newArrival": true,
             "colors": []
           },
           {
-            "id": 6,
-            "image": "/4.jfif",
+            "id": 2,
+            "image": "/shoes2.jfif",
+            "title": "Creped Slip Dress",
+            "price": "$24.99",
+            "newArrival": true,
+            "colors": []
+          },
+          {
+            "id": 3,
+            "image": "/shoes3.jfif",
+            "title": "Creped Slip Dress",
+            "price": "$24.99",
+            "newArrival": true,
+            "colors": []
+          },
+          {
+            "id": 4,
+            "image": "/shoes4.jfif",
             "title": "Creped Slip Dress",
             "price": "$24.99",
             "newArrival": true,
             "colors": []
           }
         ],
-        "beauty": [
-
+        "women_beauty": [
+          {
+            "id": 1,
+            "image": "/beauty1.jfif",
+            "title": "Creped Slip Dress",
+            "price": "$24.99",
+            "newArrival": true,
+            "colors": []
+          },
+          {
+            "id": 2,
+            "image": "/beauty2.jfif",
+            "title": "Creped Slip Dress",
+            "price": "$24.99",
+            "newArrival": true,
+            "colors": []
+          },
+          {
+            "id": 3,
+            "image": "/beauty3.jfif",
+            "title": "Creped Slip Dress",
+            "price": "$24.99",
+            "newArrival": true,
+            "colors": []
+          },
+          {
+            "id": 4,
+            "image": "/beauty4.jfif",
+            "title": "Creped Slip Dress",
+            "price": "$24.99",
+            "newArrival": true,
+            "colors": []
+          }
         ]
       }
     },
-    "man": {
+    "men": {
+      "newArrivals": {
+        "men_clothes": [
+          {
+            "id": 1,
+            "image": "/manclothes1.jfif",
+            "title": "Creped Slip Dress",
+            "price": "$24.99",
+            "newArrival": true,
+            "colors": []
+          },
+          {
+            "id": 2,
+            "image": "/manclothes2.jfif",
+            "title": "Creped Slip Dress",
+            "price": "$24.99",
+            "newArrival": true,
+            "colors": []
+          },
+          {
+            "id": 3,
+            "image": "/manclothes3.jfif",
+            "title": "Creped Slip Dress",
+            "price": "$24.99",
+            "newArrival": true,
+            "colors": []
+          },
+          {
+            "id": 4,
+            "image": "/manclothes4.jfif",
+            "title": "Creped Slip Dress",
+            "price": "$24.99",
+            "newArrival": true,
+            "colors": []
+          }
+        ],
 
+        "men_shoesAccessories": [
+          {
+            "id": 1,
+            "image": "/shoesman1.jfif",
+            "title": "Creped Slip Dress",
+            "price": "$24.99",
+            "newArrival": true,
+            "colors": []
+          },
+          {
+            "id": 2,
+            "image": "/glasses1.jfif",
+            "title": "Creped Slip Dress",
+            "price": "$24.99",
+            "newArrival": true,
+            "colors": []
+          },
+          {
+            "id": 3,
+            "image": "/glasses2.jfif",
+            "title": "Creped Slip Dress",
+            "price": "$24.99",
+            "newArrival": true,
+            "colors": []
+          },
+          {
+            "id": 4,
+            "image": "/glasses3.jfif",
+            "title": "Creped Slip Dress",
+            "price": "$24.99",
+            "newArrival": true,
+            "colors": []
+          }
+        ],
+        "men_sportwear": [
+          {
+            "id": 1,
+            "image": "/sport1.jfif",
+            "title": "Creped Slip Dress",
+            "price": "$24.99",
+            "newArrival": true,
+            "colors": []
+          },
+          {
+            "id": 2,
+            "image": "/sport2.jfif",
+            "title": "Creped Slip Dress",
+            "price": "$24.99",
+            "newArrival": true,
+            "colors": []
+          },
+          {
+            "id": 3,
+            "image": "/sport3.jfif",
+            "title": "Creped Slip Dress",
+            "price": "$24.99",
+            "newArrival": true,
+            "colors": []
+          },
+          {
+            "id": 4,
+            "image": "/sport4.jfif",
+            "title": "Creped Slip Dress",
+            "price": "$24.99",
+            "newArrival": true,
+            "colors": []
+          }
+        ]
+      }
     }
   }
 }

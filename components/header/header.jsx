@@ -20,11 +20,11 @@ const headerMenu = [
           },
           {
             name: "Shoes & Accessories",
-            link: "/catalog/shoesAccessories"
+            link: "/catalog/women_shoesAccessories"
           },
           {
             name: "Beauty",
-            link: "/"
+            link: "/catalog/women_beauty"
           },
           {
             name: "Underwear&Nightwear",
@@ -273,19 +273,19 @@ const headerMenu = [
         items: [
           {
             name: "View All",
-            link: "/"
+            link: "/catalog/men"
           },
           {
             name: "Clothes",
-            link: "/"
+            link: "/catalog/men_clothes"
           },
           {
             name: "Shoes & Accessories",
-            link: "/"
+            link: "/catalog/men_shoesAccessories"
           },
           {
-            name: "Beauty",
-            link: "/"
+            name: "Sport Wear",
+            link: "/catalog/men_sportwear"
           },
         ]
       },

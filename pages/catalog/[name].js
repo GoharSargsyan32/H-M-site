@@ -15,11 +15,11 @@ const innerLinks = [
       },
       {
         name: "Clothes",
-        link: "/",
+        link: "http://localhost:3000/catalog/women_clothes",
       },
       {
         name: "Shoes & Accessories",
-        link: "/",
+        link: "http://localhost:3000/catalog/women_shoesAccessories",
       },
       {
         name: "Beauty",
