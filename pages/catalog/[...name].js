@@ -4,6 +4,8 @@ import cls from "./[name].module.scss";
 import Image from "next/image";
 import Product from "@/components/product/product";
 import {useEffect, useState} from "react";
+import {useSelector} from "react-redux";
+import {productsSelector} from "@/store/reducers/products/products.slice";
 
 const innerLinks = [
   {
@@ -256,13 +258,18 @@ const innerLinks = [
 const Catalog = ({}) => {
   const router = useRouter();
   const [products, setProducts] = useState([])
+  const productsState = useSelector(productsSelector)
   useEffect(() => {
-    (async () => {
-      const response = await fetch("http://localhost:4200/products")
-      const data = await response.json()
-      setProducts(data.woman.newArrivals[router.query.name] ?? [])
-    })()
-  },[router])
+    const routername = router.query.name ?? []
+    if (Object.values(routername).length > 0 && Object.keys(productsState.products).length > 0) {
+      console.log(routername)
+      const category = routername[1].split("_")[0]
+      const innerCategory = routername[0]
+      const name = routername[1]
+      console.log(productsState.products, category, innerCategory, name)
+      setProducts(productsState.products[category][innerCategory][name])
+    }
+  },[productsState, router.query])
   return (
     <div className={cls.catalog}>
       <div className={cls.up}>Catalog/{router.query.name}</div>

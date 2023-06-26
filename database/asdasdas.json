@@ -1,6 +1,6 @@
 {
   "products": {
-    "woman": {
+    "women": {
       "newArrivals": {
         "women_clothes": [
           {
@@ -170,6 +170,14 @@
           },
           {
             "id": 4,
+            "image": "/glasses3.jfif",
+            "title": "Creped Slip Dress",
+            "price": "$24.99",
+            "newArrival": true,
+            "colors": []
+          },
+          {
+            "id": 5,
             "image": "/glasses3.jfif",
             "title": "Creped Slip Dress",
             "price": "$24.99",
