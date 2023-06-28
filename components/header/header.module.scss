@@ -23,6 +23,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
+
 }
 
 .box{
@@ -44,16 +46,23 @@
     
 }
 
+.box1 > div > a {
+    
+        text-decoration: none;
+        color: #000000;
+        font-size: 16px;
+    
+}
+
 .box1,.box3{ 
     align-items: flex-start;
     font-size: 18px;
     gap: 5%;
     padding-top: 1%;
+
+    
     
 }
-
-
-
 
 .box2 {
     align-items: flex-end;
@@ -71,8 +80,7 @@
 
     & > li > a {
         display: flex;     
-        gap: 10px;
-        
+        gap: 10px;       
 
     }    
 
@@ -206,10 +214,6 @@
 
 .headerLink {
 
-    &:hover > .innerMenu {
-        visibility: visible;
-    }
-
     &> a{
         text-decoration: none;
         color: #000000;
@@ -222,7 +226,7 @@
     background-color: white;
     position: absolute;
     left: 0;
-    visibility: hidden;
+    top: 80px;    
     border-bottom: 5px solid black;
     display: flex;
     flex-wrap: wrap;

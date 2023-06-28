@@ -38,7 +38,7 @@
         ],
         "women_shoesAccessories": [
           {
-            "id": 1,
+            "id": 5,
             "image": "/shoes1.jfif",
             "title": "Creped Slip Dress",
             "price": "$24.99",
@@ -46,7 +46,7 @@
             "colors": []
           },
           {
-            "id": 2,
+            "id": 6,
             "image": "/shoes2.jfif",
             "title": "Creped Slip Dress",
             "price": "$24.99",
@@ -54,7 +54,7 @@
             "colors": []
           },
           {
-            "id": 3,
+            "id": 7,
             "image": "/shoes3.jfif",
             "title": "Creped Slip Dress",
             "price": "$24.99",
@@ -62,7 +62,7 @@
             "colors": []
           },
           {
-            "id": 4,
+            "id": 8,
             "image": "/shoes4.jfif",
             "title": "Creped Slip Dress",
             "price": "$24.99",
@@ -72,7 +72,7 @@
         ],
         "women_beauty": [
           {
-            "id": 1,
+            "id": 9,
             "image": "/beauty1.jfif",
             "title": "Creped Slip Dress",
             "price": "$24.99",
@@ -80,7 +80,7 @@
             "colors": []
           },
           {
-            "id": 2,
+            "id": 10,
             "image": "/beauty2.jfif",
             "title": "Creped Slip Dress",
             "price": "$24.99",
@@ -88,7 +88,7 @@
             "colors": []
           },
           {
-            "id": 3,
+            "id": 11,
             "image": "/beauty3.jfif",
             "title": "Creped Slip Dress",
             "price": "$24.99",
@@ -96,7 +96,7 @@
             "colors": []
           },
           {
-            "id": 4,
+            "id": 12,
             "image": "/beauty4.jfif",
             "title": "Creped Slip Dress",
             "price": "$24.99",
@@ -110,7 +110,7 @@
       "newArrivals": {
         "men_clothes": [
           {
-            "id": 1,
+            "id": 13,
             "image": "/manclothes1.jfif",
             "title": "Creped Slip Dress",
             "price": "$24.99",
@@ -118,7 +118,7 @@
             "colors": []
           },
           {
-            "id": 2,
+            "id": 14,
             "image": "/manclothes2.jfif",
             "title": "Creped Slip Dress",
             "price": "$24.99",
@@ -126,7 +126,7 @@
             "colors": []
           },
           {
-            "id": 3,
+            "id": 15,
             "image": "/manclothes3.jfif",
             "title": "Creped Slip Dress",
             "price": "$24.99",
@@ -134,7 +134,7 @@
             "colors": []
           },
           {
-            "id": 4,
+            "id": 16,
             "image": "/manclothes4.jfif",
             "title": "Creped Slip Dress",
             "price": "$24.99",
@@ -145,7 +145,7 @@
 
         "men_shoesAccessories": [
           {
-            "id": 1,
+            "id": 17,
             "image": "/shoesman1.jfif",
             "title": "Creped Slip Dress",
             "price": "$24.99",
@@ -153,7 +153,7 @@
             "colors": []
           },
           {
-            "id": 2,
+            "id": 18,
             "image": "/glasses1.jfif",
             "title": "Creped Slip Dress",
             "price": "$24.99",
@@ -161,7 +161,7 @@
             "colors": []
           },
           {
-            "id": 3,
+            "id": 19,
             "image": "/glasses2.jfif",
             "title": "Creped Slip Dress",
             "price": "$24.99",
@@ -169,7 +169,7 @@
             "colors": []
           },
           {
-            "id": 4,
+            "id": 20,
             "image": "/glasses3.jfif",
             "title": "Creped Slip Dress",
             "price": "$24.99",
@@ -177,7 +177,7 @@
             "colors": []
           },
           {
-            "id": 5,
+            "id": 21,
             "image": "/glasses3.jfif",
             "title": "Creped Slip Dress",
             "price": "$24.99",
@@ -187,7 +187,7 @@
         ],
         "men_sportwear": [
           {
-            "id": 1,
+            "id": 22,
             "image": "/sport1.jfif",
             "title": "Creped Slip Dress",
             "price": "$24.99",
@@ -195,7 +195,7 @@
             "colors": []
           },
           {
-            "id": 2,
+            "id": 23,
             "image": "/sport2.jfif",
             "title": "Creped Slip Dress",
             "price": "$24.99",
@@ -203,7 +203,7 @@
             "colors": []
           },
           {
-            "id": 3,
+            "id": 24,
             "image": "/sport3.jfif",
             "title": "Creped Slip Dress",
             "price": "$24.99",
@@ -211,7 +211,7 @@
             "colors": []
           },
           {
-            "id": 4,
+            "id": 25,
             "image": "/sport4.jfif",
             "title": "Creped Slip Dress",
             "price": "$24.99",
