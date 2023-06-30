@@ -43,7 +43,7 @@ const headerMenu = [
         items: [
           {
             name: "View All",
-            link: "/catalog/women",
+            link: "/catalog/newArrivals/women_all",
           },
           {
             name: "Clothes",
@@ -68,7 +68,7 @@ const headerMenu = [
         items: [
           {
             name: "The Occasion Edit",
-            link: "/",
+            link: "/catalog/trendingNow/women_theOccasionEdit",
           },
           {
             name: "Beachwear Destination",
@@ -102,7 +102,7 @@ const headerMenu = [
         items: [
           {
             name: "Wedding",
-            link: "/",
+            link: "/catalog/shopByOccasion/women_wedding",
           },
           {
             name: "Party Wear",
@@ -296,7 +296,7 @@ const headerMenu = [
         items: [
           {
             name: "View All",
-            link: "/catalog/newArrivals",
+            link: "/catalog/newArrivals/men_all",
           },
           {
             name: "Clothes",

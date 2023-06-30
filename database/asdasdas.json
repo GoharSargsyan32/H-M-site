@@ -104,6 +104,28 @@
             "colors": []
           }
         ]
+      },
+      "trendingNow": {
+        "women_theOccasionEdit": [
+          {
+            "id": 42,
+            "image": "/manclothes1.jfif",
+            "title": "Creped Slip Dress",
+            "price": "$24.99",
+            "colors": []
+          }
+        ]
+      },
+      "shopByOccasion": {
+        "women_wedding": [
+          {
+            "id": 124,
+            "image": "/manclothes1.jfif",
+            "title": "Creped Slip Dress",
+            "price": "$24.99",
+            "colors": []
+          }
+        ]
       }
     },
     "men": {

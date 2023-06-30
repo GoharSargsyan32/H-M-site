@@ -267,7 +267,11 @@ const Catalog = ({}) => {
       const innerCategory = routername[0]
       const name = routername[1]
       console.log(productsState.products, category, innerCategory, name)
-      setProducts(productsState.products[category][innerCategory][name])
+      if (name.split("_")[1] === "all") {
+          setProducts(Object.values(productsState.products[category][innerCategory]).flat(Infinity))
+      } else {
+        setProducts(productsState.products[category][innerCategory][name])
+      }
     }
   },[productsState, router.query])
   return (
