@@ -6,6 +6,7 @@ import Product from "@/components/product/product";
 import {useEffect, useState} from "react";
 import {useSelector} from "react-redux";
 import {productsSelector} from "@/store/reducers/products/products.slice";
+import {categoriesSelector} from "@/store/reducers/categories/categories.slice";
 
 const innerLinks = [
   {
@@ -259,27 +260,30 @@ const Catalog = ({}) => {
   const router = useRouter();
   const [products, setProducts] = useState([])
   const productsState = useSelector(productsSelector)
+  const categoriesState = useSelector(categoriesSelector)
+  const [selectedCategory, setSelectedCategory] = useState([])
   useEffect(() => {
     const routername = router.query.name ?? []
-    if (Object.values(routername).length > 0 && Object.keys(productsState.products).length > 0) {
-      console.log(routername)
+    if (Object.values(categoriesState.categories).length > 0 && Object.values(routername).length > 0 && Object.keys(productsState.products).length > 0) {
       const category = routername[1].split("_")[0]
       const innerCategory = routername[0]
       const name = routername[1]
-      console.log(productsState.products, category, innerCategory, name)
+      setSelectedCategory(categoriesState.categories.find(item => {
+        return item.name.toUpperCase() === category.toUpperCase()
+      }).innerLinks)
       if (name.split("_")[1] === "all") {
           setProducts(Object.values(productsState.products[category][innerCategory]).flat(Infinity))
       } else {
         setProducts(productsState.products[category][innerCategory][name])
       }
     }
-  },[productsState, router.query])
+  },[productsState, categoriesState, router.query])
   return (
     <div className={cls.catalog}>
       <div className={cls.up}>Catalog/{router.query.name}</div>
       <div className={cls.down}>
         <div className={cls.left}>
-          {(innerLinks ?? []).map(({ name, items }) => {
+          {selectedCategory.length > 0 && selectedCategory.map(({ name, items }) => {
             return (
               <div>
                 <span>{name}</span>
