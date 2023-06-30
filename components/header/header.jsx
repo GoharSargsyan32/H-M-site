@@ -2094,7 +2094,6 @@ const Header = () => {
               <div>
                 <span>{name}</span>
                 {items.map(({ name, link }) => {
-                  console.log(name);
                   return (
                     <Link onClick={() => setMenuVisibility("hidden")} href={link}>
                       {name}
