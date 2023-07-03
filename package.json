@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "serve": "concurrently \"next dev\" \"json-server --watch --p 4200 --d 900 database/asdasdas.json\"",
+    "serve": "concurrently \"next dev\" \"json-server --watch --p 4200 --d 900 database/database.json\"",
     "server": "json-server --watch --p 4200 --d 900 database/database.json",
     "build": "next build",
     "start": "next start",
@@ -12,6 +12,7 @@
   },
   "dependencies": {
     "@reduxjs/toolkit": "^1.9.5",
+    "axios": "^1.4.0",
     "classnames": "^2.3.2",
     "concurrently": "^8.2.0",
     "json-server": "^0.17.3",
