@@ -1968,7 +1968,6 @@ const Header = () => {
   const [menuVisibility, setMenuVisibility] = useState("hidden");
   const [selectedLink, setSelectedLink] = useState("");
 
-
   const onLinkMouseEnter = (key) => {
     setSelectedLink(key);
     setMenuVisibility("visible");
@@ -1976,13 +1975,13 @@ const Header = () => {
 
   const menuItems = useMemo(() => {
     if (selectedLink) {
-      return headerMenu.find((item) => 
-        item.key === selectedLink
-      )?.innerLinks || []
-    } 
-    return []
+      return (
+        headerMenu.find((item) => item.key === selectedLink)?.innerLinks || []
+      );
+    }
+    return [];
   }, [selectedLink]);
-  console.log(selectedLink)
+  console.log(selectedLink);
 
   const onMouseLeave = () => {
     setMenuVisibility("hidden");
@@ -2070,32 +2069,36 @@ const Header = () => {
       </div>
       <div onMouseLeave={onMouseLeave} className={cls.bottom}>
         <div className={cls.menu}>
-          {headerMenu.map(({ link, name, key, innerLinks }) => {
-            return (
-              <div key={key} className={cls.headerLink}>
-                <Link
-                  onMouseEnter={() => {
-                    onLinkMouseEnter(key);
-                  }}
-                  href={link}
-                >
-                  {name}
-                </Link>
-              </div>
-            );
-          })}
+          {headerMenu.length > 0 ? (
+            headerMenu.map(({ link, name, key, innerLinks }) => {
+              return (
+                <div key={key} className={cls.headerLink}>
+                  <Link
+                    onMouseEnter={() => {
+                      onLinkMouseEnter(key);
+                    }}
+                    href={link}
+                  >
+                    {name}
+                  </Link>
+                </div>
+              );
+            })
+          ) : (
+            <h1>Loading...</h1>
+          )}
         </div>
-        <div
-          style={{ visibility: menuVisibility }}
-          className={cls.innerMenu}
-        >
-          {(menuItems).map(({ name, items }) => {
+        <div style={{ visibility: menuVisibility }} className={cls.innerMenu}>
+          {menuItems.map(({ name, items }) => {
             return (
               <div>
                 <span>{name}</span>
                 {items.map(({ name, link }) => {
                   return (
-                    <Link onClick={() => setMenuVisibility("hidden")} href={link}>
+                    <Link
+                      onClick={() => setMenuVisibility("hidden")}
+                      href={link}
+                    >
                       {name}
                     </Link>
                   );
