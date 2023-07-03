@@ -46,22 +46,12 @@ const Header = () => {
 
   const menuItems = useMemo(() => {
     if (selectedLink) {
-<<<<<<< HEAD
-      return (
-        headerMenu.find((item) => item.key === selectedLink)?.innerLinks || []
-      );
-    }
-    return [];
-  }, [selectedLink]);
-  console.log(selectedLink);
-=======
       return categoriesState.categories.find((item) =>
         item.key === selectedLink
       )?.innerLinks || []
     } 
     return []
   }, [selectedLink]);
->>>>>>> 945573319599d58d61c09ee8074ee80777833004
 
   const onMouseLeave = () => {
     setMenuVisibility("hidden");
@@ -149,26 +139,6 @@ const Header = () => {
       </div>
       <div onMouseLeave={onMouseLeave} className={cls.bottom}>
         <div className={cls.menu}>
-<<<<<<< HEAD
-          {headerMenu.length > 0 ? (
-            headerMenu.map(({ link, name, key, innerLinks }) => {
-              return (
-                <div key={key} className={cls.headerLink}>
-                  <Link
-                    onMouseEnter={() => {
-                      onLinkMouseEnter(key);
-                    }}
-                    href={link}
-                  >
-                    {name}
-                  </Link>
-                </div>
-              );
-            })
-          ) : (
-            <h1>Loading...</h1>
-          )}
-=======
           {categoriesState.categories.length > 0 && categoriesState.categories.map(({ link, name, key, innerLinks }) => {
             return (
               <div key={key} className={cls.headerLink}>
@@ -183,19 +153,18 @@ const Header = () => {
               </div>
             );
           })}
->>>>>>> 945573319599d58d61c09ee8074ee80777833004
         </div>
-        <div style={{ visibility: menuVisibility }} className={cls.innerMenu}>
-          {menuItems.map(({ name, items }) => {
+        <div
+          style={{ visibility: menuVisibility }}
+          className={cls.innerMenu}
+        >
+          {(menuItems).map(({ name, items }) => {
             return (
               <div>
                 <span>{name}</span>
                 {items.map(({ name, link }) => {
                   return (
-                    <Link
-                      onClick={() => setMenuVisibility("hidden")}
-                      href={link}
-                    >
+                    <Link onClick={() => setMenuVisibility("hidden")} href={link}>
                       {name}
                     </Link>
                   );
