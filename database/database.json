@@ -9,7 +9,10 @@
             "title": "Creped Slip Dress",
             "price": "$24.99",
             "newArrival": true,
-            "colors": []
+            "colors": [{
+              "value": "red",
+              "title": "red"
+            }]
           },
           {
             "id": 2,
