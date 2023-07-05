@@ -4,6 +4,7 @@ import Link from "next/link";
 import { useState, useMemo } from "react";
 import {useSelector} from "react-redux";
 import {categoriesSelector} from "@/store/reducers/categories/categories.slice";
+import Loading from "@/pages/loading/loading";
 
 const menuItemKeys = {
   women: "women",
@@ -38,6 +39,7 @@ const Header = () => {
   const [menuVisibility, setMenuVisibility] = useState("hidden");
   const [selectedLink, setSelectedLink] = useState("");
   const categoriesState = useSelector(categoriesSelector)
+  console.log(categoriesState)
 
   const onLinkMouseEnter = (key) => {
     setSelectedLink(key);
@@ -139,7 +141,9 @@ const Header = () => {
       </div>
       <div onMouseLeave={onMouseLeave} className={cls.bottom}>
         <div className={cls.menu}>
-          {categoriesState.categories.length > 0 && categoriesState.categories.map(({ link, name, key, innerLinks }) => {
+          {
+            !categoriesState.loading ?
+            categoriesState.categories.length > 0 && categoriesState.categories.map(({ link, name, key, innerLinks }) => {
             return (
               <div key={key} className={cls.headerLink}>
                 <Link
@@ -152,7 +156,7 @@ const Header = () => {
                 </Link>
               </div>
             );
-          })}
+          }) : <Loading/>}
         </div>
         <div
           style={{ visibility: menuVisibility }}
