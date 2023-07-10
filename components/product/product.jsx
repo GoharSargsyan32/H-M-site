@@ -1,20 +1,21 @@
 import cls from "./product.module.scss";
 import Image from "next/image";
-import { useEffect, useState } from "react";
+import {useEffect, useState} from "react";
+import Link from "next/link";
 
 const colors = {
-  white: {
-    value: "#F0EEED",
-    title: "White",
-  },
-  black: {
-    value: "#272628",
-    title: "Black",
-  },
-  darkBeige: {
-    value: "#93826D",
-    title: "Dark Beige",
-  },
+    white: {
+        value: "#F0EEED",
+        title: "White",
+    },
+    black: {
+        value: "#272628",
+        title: "Black",
+    },
+    darkBeige: {
+        value: "#93826D",
+        title: "Dark Beige",
+    },
 };
 
 // const products = [
@@ -52,46 +53,49 @@ const colors = {
 //   },
 // ];
 
-const Product = ({ products }) => {
-  return (
-    <div className={cls.items}>
-      {products.length > 0 ? (
-        products.map(({ id, image, title, price, colors, newArrival }) => {
-          return (
-            <div className={cls.divs} key={id}>
-              <div className={cls.up}>
-                <Image src={image} alt={title} width={300} height={400} />
-              </div>
-              <div className={cls.down}>
-                <p>{title}</p>
-                <div style={{ display: "flex", gap: "2px" }}>
-                  {colors.map(({ value, title }, index) => {
+const Product = ({products}) => {
+    return (
+        <div className={cls.items}>
+            {products.length > 0 ? (
+                products.map(({id, image, title, price, colors, newArrival}) => {
                     return (
-                      <div
-                        key={index}
-                        style={{
-                          backgroundColor: value,
-                          borderRadius: "50%",
-                          width: "8px",
-                          height: "8px",
-                          cursor: "pointer",
-                        }}
-                        title={title}
-                      />
+                        <Link href={`/product/${id}`}>
+                            <div className={cls.divs} key={id}>
+                                <div className={cls.up}>
+                                    <Image src={image} alt={title} width={300} height={400}/>
+                                </div>
+                                <div className={cls.down}>
+                                    <p>{title}</p>
+                                    <div style={{display: "flex", gap: "2px"}}>
+                                        {colors.map(({value, title}, index) => {
+                                            return (
+                                                <div
+                                                    key={index}
+                                                    style={{
+                                                        backgroundColor: value,
+                                                        borderRadius: "50%",
+                                                        width: "8px",
+                                                        height: "8px",
+                                                        cursor: "pointer",
+                                                    }}
+                                                    title={title}
+                                                />
+                                            );
+                                        })}
+                                    </div>
+                                    <p>{price}</p>
+                                    {newArrival && <p>New Arrival</p>}
+                                </div>
+                            </div>
+                        </Link>
                     );
-                  })}
-                </div>
-                <p>{price}</p>
-                {newArrival && <p>New Arrival</p>}
-              </div>
-            </div>
-          );
-        })
-      ) : (
-        <h2>Loading...</h2>
-      )}
-    </div>
-  );
-};
+                })
+            ) : (
+            <h2>Loading...</h2>
+            )}
+        </div>
+    );
+}
+    ;
 
-export default Product;
+    export default Product;

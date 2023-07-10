@@ -1,7 +1,6 @@
 .main {
   width: 100%;
   height: 100vw;
-  border: 1px solid red;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -10,21 +9,17 @@
   & > .left {
     width: 60%;
     height: 100%;
-    border: 1px solid green;
     display: flex;
     justify-content: center;
     align-items: center;
-    scroll-behavior: smooth;
     flex-direction: column;
 
     & > .image_section {
       width: 100%;
-      height: 800px;
-      border: 1px solid black;
+      height: 700px;
       display: flex;
       gap: 4px;
     }
-
 
   }
 
@@ -34,15 +29,17 @@
     border: 1px solid green;
     display: flex;
     flex-direction: column;
-    position: sticky;
-    top: 25px;
-    padding: 45px;
+    padding: 15px;
 
     .product_details {
+      width: 100%;
+      height: 600px;
       display: flex;
       flex-direction: column;
-      width: 100%;
       gap: 4px;
+      position: sticky;
+      top: 0;
+      left: 0;
 
       .product_title, .product_price {
         width: 100%;
@@ -52,6 +49,63 @@
       .product_title {
         display: flex;
         justify-content: space-between;
+      }
+
+      & > .items {
+        width: 100%;
+        height: 150px;
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        margin-top: 25px;
+
+        & > p {
+          font-weight: bolder;
+          font-size: 18px;
+        }
+
+        & > .images {
+          width: 100%;
+          height: 130px;
+          display: flex;
+          gap: 15px;
+        }
+
+        & > .select > select {
+          width: 550px;
+          height: 40px;
+        }
+
+        & > .btn {
+          width: 550px;
+          height: 80px;
+          background-color: #111111;
+          color: white;
+        }
+
+        & > .text {
+          width: 300px;
+          height: 300px;
+          display: flex;
+          flex-direction: column;
+
+          & > .paragraphs {
+            width: 300px;
+            height: 100px;
+
+          }
+
+          & > .stars {
+            width: 300px;
+            height: 30px;
+            display: flex;
+            gap: 2px;
+
+          }
+
+        }
+
+
       }
     }
   }
@@ -64,5 +118,17 @@
 .list {
   width: 100%;
   height: 300px;
-  border: 1px solid red;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+
+  & > select {
+    width: 60%;
+    height: 30px;
+    display: flex;
+    border: none;
+    border-top: 1px solid black;
+  }
 }

@@ -1,29 +1,33 @@
 import {useRouter} from "next/router";
-import {useEffect, useMemo, useState} from "react";
+import {useEffect, useMemo, useState,} from "react";
 import cls from "./[id].module.scss";
 import Image from "next/image";
 import FavoriteIcon from "@/components/icons/FavoriteIcon/favoriteIcon";
+import {useSelector} from "react-redux";
+import {productsSelector} from "@/store/reducers/products/products.slice";
 
-const products = [{
-    id: '1',
-    name: "Product 1",
-    price: '$29.99',
-    favorite: true,
-    images: ["id1.jfif", "id2.jfif"]
-}, {
-    id: '2',
-    name: "Product 2",
-    price: '$49.99',
-    favorite: false,
-    images: ["id1.jfif", "id2.jfif"]
-},
+const products = [
     {
-        id: '3',
-        name: "Product 3",
-        price: '$79.99',
+        name: "Dress",
+        id: "1",
+        price: "$49.99",
         favorite: true,
-        images: ["https://example.com/product3/image1.jpg"]
-    },];
+    },
+    {
+        name: "Dress",
+        id: "2",
+        price: "$49.99",
+        favorite: true,
+    },
+    {
+        name: "Dress",
+        id: "3",
+        price: "$49.99",
+        favorite: true,
+    }
+
+]
+
 
 const Product = () => {
     const router = useRouter()
@@ -37,6 +41,10 @@ const Product = () => {
     }, [id])
 
     console.log(product)
+
+    // const products = useSelector(productsSelector).products
+    //
+    // console.log(products,"hhh")
 
 
     return (<div className={cls.main}>
@@ -54,9 +62,25 @@ const Product = () => {
 
                 </div>
                 <div className={cls.list}>
-
+                    <select>
+                        <option>Description</option>
+                    </select>
+                    <select>
+                        <option>Materials & Suppliers</option>
+                    </select>
+                    <select>
+                        <option>Care Guide</option>
+                    </select>
                 </div>
 
+                <div className={cls.image_section}>
+                    <div className={cls.image_wrapper}>
+                        <img src={"/id3.webp"} alt={"dress"} width="100%"/>
+                    </div>
+                    <div className={cls.image_wrapper}>
+                        <img src={"/id4.webp"} alt={"dress"} width="100%"/>
+                    </div>
+                </div>
 
             </div>
 
@@ -70,10 +94,49 @@ const Product = () => {
                     <div className={cls.product_price}>
                         <span>{product.price}</span>
                     </div>
+                    <div className={cls.items}>
+                        <p>Colors</p>
+                        <div className={cls.images}>
+                            <img src={"/id1.jfif"} alt={"dress"} width="70px"/>
+                            <img src={"/id2.webp"} alt={"dress"} width="70px"/>
+                        </div>
+                        <div className={cls.select}>
+                            <select>
+                                <option>Select size</option>
+                                <option value="1">S</option>
+                                <option value="2">M</option>
+                                <option value="3">L</option>
+                                <option value="4">XL</option>
+                            </select>
+                        </div>
+                        <button className={cls.btn}>Add To Bag</button>
+                        <div className={cls.text}>
+                            <div className={cls.paragraphs}>
+                                <p>Find in store</p>
+                                <p>Members get free online returns</p>
+                                <p>Delivery and Payment</p>
+                            </div>
+                            <div className={cls.stars}>
+                                <img src={"/star.svg"} alt={"star"} width="15px"/>
+                                <img src={"/star.svg"} alt={"star"} width="15px"/>
+                                <img src={"/star.svg"} alt={"star"} width="15px"/>
+                                <img src={"/star.svg"} alt={"star"} width="15px"/>
+                                <img src={"/star.svg"} alt={"star"} width="15px"/>
+                                <p>(36 reviews)</p>
+
+
+                            </div>
+                        </div>
+
+
+                    </div>
+
+
                 </div>
             </div>
         </div>
-        // <h1>This is product page {state}</h1>
+
+
     )
 }
 
