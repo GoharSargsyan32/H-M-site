@@ -103,7 +103,6 @@ export default function Home() {
           button={"Shop now"}
         />
         <Magazine />
-        <Footer />
       </main>
     </Suspense>
   );

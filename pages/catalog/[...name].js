@@ -13,6 +13,7 @@ import {categoriesSelector} from "@/store/reducers/categories/categories.slice";
 const Catalog = ({}) => {
   const router = useRouter();
   const [products, setProducts] = useState([])
+  const [link, setLink] = useState("")
   const productsState = useSelector(productsSelector)
   const categoriesState = useSelector(categoriesSelector)
   const [selectedCategory, setSelectedCategory] = useState([])
@@ -22,6 +23,7 @@ const Catalog = ({}) => {
       const category = routername[1].split("_")[0]
       const innerCategory = routername[0]
       const name = routername[1]
+      setLink(`${innerCategory}/${name}`)
       setSelectedCategory(categoriesState.categories.find(item => {
         return item.name.toUpperCase() === category.toUpperCase()
       }).innerLinks)
@@ -54,7 +56,7 @@ const Catalog = ({}) => {
           </div>
           <div className={cls.items}>
             <h1>View All</h1>
-            <Product products={products}/>
+            <Product products={products} link={link}/>
           </div>
         </div>
       </div>

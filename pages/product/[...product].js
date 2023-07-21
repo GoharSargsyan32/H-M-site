@@ -29,25 +29,28 @@ const products = [
 ]
 
 
+
 const Product = () => {
     const router = useRouter()
-    const [id, setId] = useState("")
+    const [product, setProduct] = useState()
+    const productsState = useSelector(productsSelector)
     useEffect(() => {
-        setId(router.query.id)
-    }, [router])
+        if (Object.keys(router.query).length > 0 && Object.keys(productsState.products).length > 0) {
+            const category = router.query.product[0]
+            const name = router.query.product[1]
+            const id = router.query.product[2]
+            if (name.split("_")[1] === "all") {
+                setProduct(Object.values(productsState.products[name.split("_")[0]][category]).flat(Infinity).find(item => item.id === +id))
+            } else {
+                setProduct(productsState.products[name.split("_")[0]][category][name].find(item => item.id === +id))
+            }
 
-    const product = useMemo(() => {
-        return products.find(item => item.id === id) || {}
-    }, [id])
-
-    console.log(product)
-
-    // const products = useSelector(productsSelector).products
-    //
-    // console.log(products,"hhh")
+        }
+    }, [router,productsState])
 
 
-    return (<div className={cls.main}>
+    return (
+        <div className={cls.main}>
             <div className={cls.left}>
                 <div className={cls.image_section}>
                     <div className={cls.image_wrapper}>
@@ -123,8 +126,6 @@ const Product = () => {
                                 <img src={"/star.svg"} alt={"star"} width="15px"/>
                                 <img src={"/star.svg"} alt={"star"} width="15px"/>
                                 <p>(36 reviews)</p>
-
-
                             </div>
                         </div>
 
@@ -135,8 +136,6 @@ const Product = () => {
                 </div>
             </div>
         </div>
-
-
     )
 }
 

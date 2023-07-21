@@ -53,13 +53,13 @@ const colors = {
 //   },
 // ];
 
-const Product = ({products}) => {
+const Product = ({products, link}) => {
     return (
         <div className={cls.items}>
             {products.length > 0 ? (
                 products.map(({id, image, title, price, colors, newArrival}) => {
                     return (
-                        <Link href={`/product/${id}`}>
+                        <Link href={`/product/${link}/${id}`}>
                             <div className={cls.divs} key={id}>
                                 <div className={cls.up}>
                                     <Image src={image} alt={title} width={300} height={400}/>
