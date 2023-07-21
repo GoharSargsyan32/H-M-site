@@ -32,7 +32,7 @@ const products = [
 
 const Product = () => {
     const router = useRouter()
-    const [product, setProduct] = useState()
+    const [product, setProduct] = useState({})
     const productsState = useSelector(productsSelector)
     useEffect(() => {
         if (Object.keys(router.query).length > 0 && Object.keys(productsState.products).length > 0) {
@@ -44,12 +44,11 @@ const Product = () => {
             } else {
                 setProduct(productsState.products[name.split("_")[0]][category][name].find(item => item.id === +id))
             }
-
         }
     }, [router,productsState])
 
 
-    return (
+    return Object.keys(product).length > 0 && (
         <div className={cls.main}>
             <div className={cls.left}>
                 <div className={cls.image_section}>
@@ -91,7 +90,7 @@ const Product = () => {
             <div className={cls.right}>
                 <div className={cls.product_details}>
                     <div className={cls.product_title}>
-                        <span>{product.name}</span>
+                        <span>{product.title}</span>
                         <FavoriteIcon isFavorite={product.favorite}/>
                     </div>
                     <div className={cls.product_price}>
