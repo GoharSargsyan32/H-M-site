@@ -101,7 +101,7 @@ const Header = () => {
               </div>
             </li>
             <li>
-              <Link href={""}>
+              <Link href="/favorites">
                 <Image src={"/heart.png"} alt="heart" width={30} height={30} />
                 Favourites
               </Link>

@@ -2,6 +2,8 @@ import cls from "./product.module.scss";
 import Image from "next/image";
 import {useEffect, useState} from "react";
 import Link from "next/link";
+import FavoriteIcon from "@/components/icons/FavoriteIcon/favoriteIcon";
+import addToFavorites from "@/utils/addToFavorites";
 
 const colors = {
     white: {
@@ -54,48 +56,71 @@ const colors = {
 // ];
 
 const Product = ({products, link}) => {
-    return (
-        <div className={cls.items}>
-            {products.length > 0 ? (
-                products.map(({id, image, title, price, colors, newArrival}) => {
-                    return (
-                        <Link href={`/product/${link}/${id}`}>
-                            <div className={cls.divs} key={id}>
-                                <div className={cls.up}>
-                                    <Image src={image} alt={title} width={300} height={400}/>
-                                </div>
-                                <div className={cls.down}>
-                                    <p>{title}</p>
-                                    <div style={{display: "flex", gap: "2px"}}>
-                                        {colors.map(({value, title}, index) => {
-                                            return (
-                                                <div
-                                                    key={index}
-                                                    style={{
-                                                        backgroundColor: value,
-                                                        borderRadius: "50%",
-                                                        width: "8px",
-                                                        height: "8px",
-                                                        cursor: "pointer",
-                                                    }}
-                                                    title={title}
-                                                />
-                                            );
-                                        })}
-                                    </div>
-                                    <p>{price}</p>
-                                    {newArrival && <p>New Arrival</p>}
-                                </div>
-                            </div>
-                        </Link>
-                    );
-                })
-            ) : (
-            <h2>Loading...</h2>
-            )}
-        </div>
-    );
-}
-    ;
+        const addToFavoritesHandler = async (e, product) => {
+            e.preventDefault();
 
-    export default Product;
+            try {
+                await addToFavorites(product);
+
+            } catch (error) {
+                console.error(error)
+            }
+        }
+
+        return (
+            <div className={cls.items}>
+                {products.length > 0 ? (
+                    products.map(({id, image, title, price, colors, newArrival, isFavorite}) => {
+
+
+                        return (
+                            <Link href={`/product/${link}/${id}`}>
+                                <div className={cls.divs} key={id}>
+                                    <div className={cls.up}>
+                                        <Image src={image} alt={title} width={300} height={400}/>
+                                        <div className={cls.favorites_wrapper}>
+                                        <span onClick={(e) => addToFavoritesHandler(e, {
+                                            id,
+                                            image,
+                                            title,
+                                            price,
+                                        })}>
+                                            <FavoriteIcon isFavorite={isFavorite}/>
+                                        </span>
+                                        </div>
+                                    </div>
+                                    <div className={cls.down}>
+                                        <p>{title}</p>
+                                        <div style={{display: "flex", gap: "2px"}}>
+                                            {colors.map(({value, title}, index) => {
+                                                return (
+                                                    <div
+                                                        key={index}
+                                                        style={{
+                                                            backgroundColor: value,
+                                                            borderRadius: "50%",
+                                                            width: "8px",
+                                                            height: "8px",
+                                                            cursor: "pointer",
+                                                        }}
+                                                        title={title}
+                                                    />
+                                                );
+                                            })}
+                                        </div>
+                                        <p>{price}</p>
+                                        {newArrival && <p>New Arrival</p>}
+                                    </div>
+                                </div>
+                            </Link>
+                        );
+                    })
+                ) : (
+                    <h2>Loading...</h2>
+                )}
+            </div>
+        );
+    }
+;
+
+export default Product;

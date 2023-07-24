@@ -34,6 +34,8 @@ const Catalog = ({}) => {
       }
     }
   },[productsState, categoriesState, router.query])
+
+
   return (
     <div className={cls.catalog}>
       <div className={cls.up}>Catalog/{router.query.name}</div>

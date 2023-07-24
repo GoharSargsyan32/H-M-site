@@ -48,15 +48,16 @@ const Product = () => {
     }, [router,productsState])
 
 
+
     return Object.keys(product).length > 0 && (
         <div className={cls.main}>
             <div className={cls.left}>
                 <div className={cls.image_section}>
                     <div className={cls.image_wrapper}>
-                        <img src={"/id1.jfif"} alt={"dress"} width="100%"/>
+                        <img src={product.image} alt={"dress"} width="100%"/>
                     </div>
                     <div className={cls.image_wrapper}>
-                        <img src={"/id2.webp"} alt={"dress"} width="100%"/>
+                        <img src={product.image} alt={"dress"} width="100%"/>
                     </div>
                 </div>
 
@@ -77,10 +78,10 @@ const Product = () => {
 
                 <div className={cls.image_section}>
                     <div className={cls.image_wrapper}>
-                        <img src={"/id3.webp"} alt={"dress"} width="100%"/>
+                        <img src={product.image} alt={"dress"} width="100%"/>
                     </div>
                     <div className={cls.image_wrapper}>
-                        <img src={"/id4.webp"} alt={"dress"} width="100%"/>
+                        <img src={product.image} alt={"dress"} width="100%"/>
                     </div>
                 </div>
 
@@ -104,7 +105,7 @@ const Product = () => {
                         </div>
                         <div className={cls.select}>
                             <select>
-                                <option>Select size</option>
+                                <option disabled={true} selected={true} hidden={true}>Select size</option>
                                 <option value="1">S</option>
                                 <option value="2">M</option>
                                 <option value="3">L</option>
@@ -127,11 +128,7 @@ const Product = () => {
                                 <p>(36 reviews)</p>
                             </div>
                         </div>
-
-
                     </div>
-
-
                 </div>
             </div>
         </div>
