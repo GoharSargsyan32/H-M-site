@@ -7,10 +7,12 @@ import {useEffect, useState} from "react";
 import {useSelector} from "react-redux";
 import {productsSelector} from "@/store/reducers/products/products.slice";
 import {categoriesSelector} from "@/store/reducers/categories/categories.slice";
+import {favoritesSelector} from "@/store/reducers/favorites/favorites.slice";
 
 
 
 const Catalog = ({}) => {
+  const favorites = useSelector(favoritesSelector).favorites
   const router = useRouter();
   const [products, setProducts] = useState([])
   const [link, setLink] = useState("")
@@ -35,7 +37,6 @@ const Catalog = ({}) => {
     }
   },[productsState, categoriesState, router.query])
 
-
   return (
     <div className={cls.catalog}>
       <div className={cls.up}>Catalog/{router.query.name}</div>
@@ -58,7 +59,7 @@ const Catalog = ({}) => {
           </div>
           <div className={cls.items}>
             <h1>View All</h1>
-            <Product products={products} link={link}/>
+            <Product products={products} link={link} favorites={favorites}/>
           </div>
         </div>
       </div>

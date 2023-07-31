@@ -10,4 +10,6 @@ const store = configureStore({
         favorites: favoritesSlice
     }
 })
+
+
 export default store

@@ -4,6 +4,9 @@ import {useEffect, useState} from "react";
 import Link from "next/link";
 import FavoriteIcon from "@/components/icons/FavoriteIcon/favoriteIcon";
 import addToFavorites from "@/utils/addToFavorites";
+import {useDispatch} from "react-redux";
+import {favoritesActions} from "@/store/reducers/favorites/favorites.slice";
+import removeFromFavorites from "@/utils/removeFromFavorites";
 
 const colors = {
     white: {
@@ -55,36 +58,57 @@ const colors = {
 //   },
 // ];
 
-const Product = ({products, link}) => {
+const Product = ({products, link, favorites}) => {
         const addToFavoritesHandler = async (e, product) => {
-            e.preventDefault();
-
+            e.preventDefault()
             try {
+                dispatch(favoritesActions.addFavorite(product))
                 await addToFavorites(product);
-
             } catch (error) {
                 console.error(error)
             }
         }
 
+    const removeFromFavoritesHandler = async (e, product) => {
+        e.preventDefault()
+        try {
+            dispatch(favoritesActions.removeFavorite(product))
+            await removeFromFavorites(product);
+        } catch (error) {
+            console.error(error)
+        }
+    }
+
+        const dispatch = useDispatch()
+
         return (
             <div className={cls.items}>
                 {products.length > 0 ? (
-                    products.map(({id, image, title, price, colors, newArrival, isFavorite}) => {
-
-
+                    products.map(({id, image, title, price, colors, newArrival}) => {
+                        const isFavorite = favorites.find(item => item.id === id)
                         return (
                             <Link href={`/product/${link}/${id}`}>
                                 <div className={cls.divs} key={id}>
                                     <div className={cls.up}>
                                         <Image src={image} alt={title} width={300} height={400}/>
                                         <div className={cls.favorites_wrapper}>
-                                        <span onClick={(e) => addToFavoritesHandler(e, {
-                                            id,
-                                            image,
-                                            title,
-                                            price,
-                                        })}>
+                                        <span onClick={(e) => {
+                                            if (isFavorite) {
+                                                removeFromFavoritesHandler(e,{
+                                                    id,
+                                                    image,
+                                                    title,
+                                                    price,
+                                                })
+                                            } else {
+                                                addToFavoritesHandler(e,{
+                                                    id,
+                                                    image,
+                                                    title,
+                                                    price,
+                                                })
+                                            }
+                                        }}>
                                             <FavoriteIcon isFavorite={isFavorite}/>
                                         </span>
                                         </div>

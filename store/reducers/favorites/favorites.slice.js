@@ -3,6 +3,21 @@ import fetchFavorites from "@/store/reducers/favorites/favorites.api";
 
 const favoritesSlice = createSlice({
     name: "favorites",
+    reducers: {
+        addFavorite: (state, {payload}) => {
+            return {
+                ...state,
+                favorites: [...state.favorites, payload]
+            }
+        },
+
+        removeFavorite: (state, {payload}) => {
+            return {
+                ...state,
+                favorites: state.favorites.filter(item => item.id !== payload.id)
+            }
+        }
+    },
     extraReducers: (builder) => {
         builder.addCase(fetchFavorites.pending, (state) => {
             return {

@@ -39,7 +39,6 @@ const Header = () => {
   const [menuVisibility, setMenuVisibility] = useState("hidden");
   const [selectedLink, setSelectedLink] = useState("");
   const categoriesState = useSelector(categoriesSelector)
-  console.log(categoriesState)
 
   const onLinkMouseEnter = (key) => {
     setSelectedLink(key);

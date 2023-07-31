@@ -4,7 +4,6 @@ import axios from "axios";
 
 const fetchFavorites = createAsyncThunk("favorites/fetchFavorites", async () => {
     const response = await axios.get(`${api}/favorites`)
-
     return response.data
 })
 
