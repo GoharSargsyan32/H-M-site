@@ -5,6 +5,7 @@ import { useState, useMemo } from "react";
 import {useSelector} from "react-redux";
 import {categoriesSelector} from "@/store/reducers/categories/categories.slice";
 import Loading from "@/pages/loading/loading";
+import ShoppingBag from "@/pages/shoppingBag";
 
 const menuItemKeys = {
   women: "women",
@@ -106,9 +107,9 @@ const Header = () => {
               </Link>
             </li>
             <li className={cls.shoppingbag}>
-              <Link href={""}>
+              <Link href="/shoppingBag">
                 <Image
-                  src={"/shoppingbag.png"}
+                  src={"/shoppingBag.png"}
                   alt="bag"
                   width={30}
                   height={30}

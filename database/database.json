@@ -2124,14 +2124,22 @@
   ],
   "favorites": [
     {
-      "id": 8,
-      "image": "/shoes4.jfif",
+      "id": 1,
+      "image": "/1.jfif",
       "title": "Creped Slip Dress",
       "price": "$24.99"
     },
     {
-      "id": 14,
-      "image": "/manclothes2.jfif",
+      "id": 2,
+      "image": "/2.jfif",
+      "title": "Creped Slip Dress",
+      "price": "$24.99"
+    }
+  ],
+  "shoppingBag": [
+    {
+      "id": 1,
+      "image": "/1.jfif",
       "title": "Creped Slip Dress",
       "price": "$24.99"
     }

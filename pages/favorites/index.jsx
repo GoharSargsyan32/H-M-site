@@ -18,7 +18,7 @@ const Favorites = () => {
         }
     }
 
-    return <div style={{ display: 'flex', gap: 16 }}>
+    return <div style={{display: 'flex', gap: 16}}>
         {favoritesState.loading ? <>Loading...</> : (
             favoritesState.favorites.map(item => {
                 return <div key={item.id}>
@@ -26,8 +26,9 @@ const Favorites = () => {
                     <p>{item.title}</p>
                     <p>{item.price}</p>
                     <button onClick={(e) => {
-                        removeFromFavoritesHandler(e,{id: item.id})
-                    }}>delete</button>
+                        removeFromFavoritesHandler(e, {id: item.id})
+                    }}>delete
+                    </button>
                 </div>
             })
 

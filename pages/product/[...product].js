@@ -5,6 +5,8 @@ import Image from "next/image";
 import FavoriteIcon from "@/components/icons/FavoriteIcon/favoriteIcon";
 import {useSelector} from "react-redux";
 import {productsSelector} from "@/store/reducers/products/products.slice";
+import addToShoppingBag from "@/utils/addToShoppingBag";
+import Link from "next/link";
 
 const products = [
     {
@@ -112,7 +114,10 @@ const Product = () => {
                                 <option value="4">XL</option>
                             </select>
                         </div>
-                        <button className={cls.btn}>Add To Bag</button>
+                        {/*<Link href="/shoppingBag">*/}
+                            <button className={cls.btn} >Add To Bag</button>
+                        {/*</Link>*/}
+
                         <div className={cls.text}>
                             <div className={cls.paragraphs}>
                                 <p>Find in store</p>
