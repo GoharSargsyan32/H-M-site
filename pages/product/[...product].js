@@ -49,6 +49,16 @@ const Product = () => {
         }
     }, [router,productsState])
 
+    const [options, setOptions] = useState({
+        color: "",
+        size: "",
+    })
+
+    const addToShoppingBagHandler = async (e, product) => {
+        e.preventDefault()
+        await addToShoppingBag(product)
+    }
+
 
 
     return Object.keys(product).length > 0 && (
@@ -88,8 +98,6 @@ const Product = () => {
                 </div>
 
             </div>
-
-
             <div className={cls.right}>
                 <div className={cls.product_details}>
                     <div className={cls.product_title}>
@@ -102,20 +110,36 @@ const Product = () => {
                     <div className={cls.items}>
                         <p>Colors</p>
                         <div className={cls.images}>
-                            <img src={"/id1.jfif"} alt={"dress"} width="70px"/>
-                            <img src={"/id2.webp"} alt={"dress"} width="70px"/>
+                            {
+                                product.colors.length > 0 && product.colors.map(item => {
+                                    return <div onClick={() => {setOptions({...options, color: item.title})}} className={cls.color} style={{
+                                        backgroundColor: item.value,
+                                        border: item.title === options.color && "2px solid black"
+                                    }}></div>
+                                })
+                            }
                         </div>
                         <div className={cls.select}>
-                            <select>
+                            <select onChange={(e) => {
+                                setOptions({
+                                    ...options,
+                                    size: e.target.value
+                                })
+                            }}>
                                 <option disabled={true} selected={true} hidden={true}>Select size</option>
-                                <option value="1">S</option>
-                                <option value="2">M</option>
-                                <option value="3">L</option>
-                                <option value="4">XL</option>
+                                <option value="S">S</option>
+                                <option value="M">M</option>
+                                <option value="L">L</option>
+                                <option value="XL">XL</option>
                             </select>
                         </div>
                         {/*<Link href="/shoppingBag">*/}
-                            <button className={cls.btn} >Add To Bag</button>
+                            <button className={cls.btn} onClick={(e) => {
+                                addToShoppingBagHandler(e, {
+                                    ...product,
+                                    ...options
+                                })
+                            }}>Add To Bag</button>
                         {/*</Link>*/}
 
                         <div className={cls.text}>

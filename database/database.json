@@ -14,6 +14,10 @@
               {
                 "value": "red",
                 "title": "red"
+              },
+              {
+                "value": "#2b4aad",
+                "title": "blue"
               }
             ]
           },
@@ -2124,14 +2128,14 @@
   ],
   "favorites": [
     {
-      "id": 1,
-      "image": "/1.jfif",
+      "id": 2,
+      "image": "/2.jfif",
       "title": "Creped Slip Dress",
       "price": "$24.99"
     },
     {
-      "id": 2,
-      "image": "/2.jfif",
+      "id": 1,
+      "image": "/1.jfif",
       "title": "Creped Slip Dress",
       "price": "$24.99"
     }
@@ -2141,7 +2145,21 @@
       "id": 1,
       "image": "/1.jfif",
       "title": "Creped Slip Dress",
-      "price": "$24.99"
+      "price": "$24.99",
+      "isFavorite": true,
+      "newArrival": true,
+      "colors": [
+        {
+          "value": "red",
+          "title": "red"
+        },
+        {
+          "value": "#2b4aad",
+          "title": "blue"
+        }
+      ],
+      "color": "red",
+      "size": "L"
     }
   ]
 }
