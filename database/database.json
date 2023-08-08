@@ -28,7 +28,16 @@
             "price": "$24.99",
             "isFavorite": false,
             "newArrival": true,
-            "colors": []
+            "colors": [
+              {
+                "value": "red",
+                "title": "red"
+              },
+              {
+                "value": "#2b4aad",
+                "title": "blue"
+              }
+            ]
           },
           {
             "id": 3,
@@ -2132,34 +2141,7 @@
       "image": "/2.jfif",
       "title": "Creped Slip Dress",
       "price": "$24.99"
-    },
-    {
-      "id": 1,
-      "image": "/1.jfif",
-      "title": "Creped Slip Dress",
-      "price": "$24.99"
     }
   ],
-  "shoppingBag": [
-    {
-      "id": 1,
-      "image": "/1.jfif",
-      "title": "Creped Slip Dress",
-      "price": "$24.99",
-      "isFavorite": true,
-      "newArrival": true,
-      "colors": [
-        {
-          "value": "red",
-          "title": "red"
-        },
-        {
-          "value": "#2b4aad",
-          "title": "blue"
-        }
-      ],
-      "color": "red",
-      "size": "L"
-    }
-  ]
+  "shoppingBag": []
 }

@@ -111,7 +111,7 @@ const Product = () => {
                         <p>Colors</p>
                         <div className={cls.images}>
                             {
-                                product.colors.length > 0 && product.colors.map(item => {
+                                product.colors.length > 0 && [product.colors].map(item => {
                                     return <div onClick={() => {setOptions({...options, color: item.title})}} className={cls.color} style={{
                                         backgroundColor: item.value,
                                         border: item.title === options.color && "2px solid black"

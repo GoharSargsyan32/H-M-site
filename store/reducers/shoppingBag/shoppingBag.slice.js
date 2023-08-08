@@ -14,7 +14,7 @@ const shoppingBagSlice = createSlice({
         removeShoppingBag: (state, {payload}) => {
             return {
                 ...state,
-                addShoppingBag: state.shoppingBag.filter(item => item.id !== payload.id)
+                shoppingBag: state.shoppingBag.filter(item => item.id !== payload.id)
             }
         }
     },

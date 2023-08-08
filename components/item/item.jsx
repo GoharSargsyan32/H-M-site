@@ -1,8 +1,25 @@
 import cls from "./item.module.scss"
 import FavoriteIcon from "@/components/icons/FavoriteIcon/favoriteIcon";
 import Link from "next/link";
+import {favoritesActions, favoritesSelector} from "@/store/reducers/favorites/favorites.slice";
+import removeFromFavorites from "@/utils/removeFromFavorites";
+import {useDispatch, useSelector} from "react-redux";
+import removeFromShoppingBag from "@/utils/removeFromShoppingBag";
+import ShoppingBag from "@/pages/shoppingBag";
+import {shoppingBagActions, shoppingBagSelector} from "@/store/reducers/shoppingBag/shoppingBag.slice";
 
-const Item = ({image,price,title,id,color,size}) => {
+const Item = ({image, price, title, id, color, size}) => {
+    const ShoppingBagState = useSelector(shoppingBagSelector)
+    const dispatch = useDispatch()
+    const removeFromShoppingBagHandler = async (e, product) => {
+        e.preventDefault()
+        try {
+            dispatch(shoppingBagActions.removeShoppingBag(product))
+            await removeFromShoppingBag(product);
+        } catch (error) {
+            console.error(error)
+        }
+    }
     return (
         <div className={cls.item}>
             <div className={cls.product}>
@@ -37,7 +54,9 @@ const Item = ({image,price,title,id,color,size}) => {
                             <option>5</option>
                         </select>
                     </div>
-                    <button><img src={"/bin.svg"} width={20} height={20}/></button>
+                    <button onClick={(e) => {
+                        removeFromShoppingBagHandler(e, {id})
+                    }}><img src={"/bin.svg"} width={20} height={20}/></button>
                 </div>
             </div>
             <div className={cls.sum}>

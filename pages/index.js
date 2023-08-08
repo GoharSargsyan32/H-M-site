@@ -8,6 +8,7 @@ import BigSale from "@/components/bigSale/bigSale";
 import Footer from "@/components/footer/footer";
 import { Suspense } from "react";
 
+
 const categories = [
   {
     name: "Women Tops",
