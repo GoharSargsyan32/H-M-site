@@ -13,6 +13,10 @@ const ShoppingBag = () => {
     useEffect(() => {
         dispatch(fetchShoppingBag())
     }, [])
+    console.log(shoppingBagState.shoppingBag)
+    console.log(shoppingBagState.shoppingBag.reduce((acc,item) => {
+        return acc + +item.price.replaceAll(/[^\d.]/g, "")
+    },0))
     return (
         <div className={cls.main}>
             <h1>Shopping bag</h1>

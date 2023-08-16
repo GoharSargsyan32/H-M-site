@@ -6,6 +6,7 @@ import {useSelector} from "react-redux";
 import {categoriesSelector} from "@/store/reducers/categories/categories.slice";
 import Loading from "@/pages/loading/loading";
 import ShoppingBag from "@/pages/shoppingBag";
+import {shoppingBagSelector} from "@/store/reducers/shoppingBag/shoppingBag.slice";
 
 const menuItemKeys = {
   women: "women",
@@ -40,6 +41,7 @@ const Header = () => {
   const [menuVisibility, setMenuVisibility] = useState("hidden");
   const [selectedLink, setSelectedLink] = useState("");
   const categoriesState = useSelector(categoriesSelector)
+  const shoppingBagProducts = useSelector(shoppingBagSelector).shoppingBag
 
   const onLinkMouseEnter = (key) => {
     setSelectedLink(key);
@@ -114,7 +116,7 @@ const Header = () => {
                   width={30}
                   height={30}
                 />
-                Shopping bag (0)
+                Shopping bag ({shoppingBagProducts.length})
               </Link>
               <div className={cls.shoppingdesk}>
                 <div>

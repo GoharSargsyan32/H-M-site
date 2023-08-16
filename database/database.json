@@ -2143,5 +2143,28 @@
       "price": "$24.99"
     }
   ],
-  "shoppingBag": []
+  "shoppingBag": [
+    {
+      "resid": 17,
+      "image": "/shoesman1.jfif",
+      "title": "Creped Slip Dress",
+      "price": "$24.99",
+      "newArrival": true,
+      "colors": [],
+      "color": "",
+      "size": "",
+      "id": 1
+    },
+    {
+      "resid": 14,
+      "image": "/manclothes2.jfif",
+      "title": "Creped Slip Dress",
+      "price": "$24.99",
+      "newArrival": true,
+      "colors": [],
+      "color": "",
+      "size": "",
+      "id": 2
+    }
+  ]
 }

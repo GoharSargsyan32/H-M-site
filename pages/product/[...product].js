@@ -3,10 +3,11 @@ import {useEffect, useMemo, useState,} from "react";
 import cls from "./[id].module.scss";
 import Image from "next/image";
 import FavoriteIcon from "@/components/icons/FavoriteIcon/favoriteIcon";
-import {useSelector} from "react-redux";
+import {useDispatch, useSelector} from "react-redux";
 import {productsSelector} from "@/store/reducers/products/products.slice";
 import addToShoppingBag from "@/utils/addToShoppingBag";
 import Link from "next/link";
+import {shoppingBagActions} from "@/store/reducers/shoppingBag/shoppingBag.slice";
 
 const products = [
     {
@@ -35,6 +36,7 @@ const products = [
 const Product = () => {
     const router = useRouter()
     const [product, setProduct] = useState({})
+    const dispatch = useDispatch()
     const productsState = useSelector(productsSelector)
     useEffect(() => {
         if (Object.keys(router.query).length > 0 && Object.keys(productsState.products).length > 0) {
@@ -56,6 +58,7 @@ const Product = () => {
 
     const addToShoppingBagHandler = async (e, product) => {
         e.preventDefault()
+        dispatch(shoppingBagActions.addShoppingBag(product))
         await addToShoppingBag(product)
     }
 
